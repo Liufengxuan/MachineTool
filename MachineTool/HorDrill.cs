@@ -11,15 +11,14 @@ using System.Windows.Forms;
 
 namespace MachineTool
 {
-    public partial class PressWheel : BaseControl
+    public partial class HorDrill : BaseControl
     {
-        public PressWheel()
+        public HorDrill()
         {
-            InitializeComponent();
             C1 = ThemeColor;
         }
 
-        private Color _C1 ;
+        private Color _C1;
         [Description("中心渐变色1"), Category("MT"), Browsable(true)]
         public Color C1
         {
@@ -27,7 +26,7 @@ namespace MachineTool
             set { _C1 = value; }
         }
 
-        private bool _IsHor=true;
+        private bool _IsHor = true;
         [Description("两轮在水平方向"), Category("MT"), Browsable(true)]
         public bool IsHor
         {
@@ -36,13 +35,9 @@ namespace MachineTool
         }
 
 
-
-
-
-
         protected override void OnPaint(PaintEventArgs e)
         {
-          
+
             if (MImage == null)
             {
                 MImage = new Bitmap(this.Width, this.Height);
@@ -60,16 +55,56 @@ namespace MachineTool
             MGrap.Clear(this.BackColor);
             if (AntiAliasing)
                 MGrap.SmoothingMode = SmoothingMode.AntiAlias;
-            int width = this.Width -3;
-            int height = this.Height -3;
+            int width = this.Width - 3;
+            int height = this.Height - 3;
+            float w1 = width;
+            float h1 = height;
+            RectangleF r1 = new RectangleF(0, 0, w1, h1);
+
+            w1 = width * 0.2f;
+            h1 = height * 0.15f;
+            r1.Inflate(-w1, -h1);
+
+            GraphicsPath gp = new GraphicsPath();
+
+
+
+            //------------------------------------
+            e.Graphics.DrawImage(MImage, 0, 0);
+            base.OnPaint(e);
+        }
+
+
+
+        protected  void OnPaint2(PaintEventArgs e)
+        {
+
+            if (MImage == null)
+            {
+                MImage = new Bitmap(this.Width, this.Height);
+                MGrap = Graphics.FromImage(MImage);
+            }
+            else if (MImage.Width != this.Width || MImage.Height != this.Height)
+            {
+                MGrap.Dispose();
+                MImage.Dispose();
+                MImage = new Bitmap(this.Width - 1, this.Height - 1);
+                MGrap = Graphics.FromImage(MImage);
+            }
+
+            //------------------------------------
+            MGrap.Clear(this.BackColor);
+            MGrap.SmoothingMode = SmoothingMode.AntiAlias;
+            int width = this.Width - 3;
+            int height = this.Height - 3;
             float w1 = width;
             float h1 = height;
             RectangleF r1 = new RectangleF(0, 0, w1, h1);
 
             if (IsHor)
             {
-                w1 = width * 0.25f;
-                h1 = height * 0.17f;
+                w1 = width * 0.2f;
+                h1 = height * 0.15f;
                 r1.Inflate(-w1, -h1);
 
                 GraphicsPath gp = new GraphicsPath();
@@ -78,7 +113,7 @@ namespace MachineTool
                 pgb.CenterColor = this.BackColor;
                 pgb.CenterPoint = new PointF(r1.Left + r1.Width / 2, r1.Top + r1.Height / 2);
                 pgb.FocusScales = new PointF(1f, 0f);
-                pgb.SurroundColors = new Color[] { C1};
+                pgb.SurroundColors = new Color[] { C1 };
                 Pen p1 = new Pen(GetStatusColor(), 2);
                 MGrap.DrawPath(p1, gp);
                 MGrap.FillPath(pgb, gp);
@@ -96,8 +131,8 @@ GetStatusColor(), this.BackColor);
             }
             else
             {
-                w1 = width * 0.17f;
-                h1 = height * 0.25f;
+                w1 = width * 0.15f;
+                h1 = height * 0.2f;
                 r1.Inflate(-w1, -h1);
 
                 GraphicsPath gp = new GraphicsPath();
@@ -114,7 +149,7 @@ GetStatusColor(), this.BackColor);
                 HatchBrush hbrush1 = new HatchBrush(HatchStyle.LightVertical,
 GetStatusColor(), this.BackColor);
 
-                RectangleF r2 = new RectangleF(1, 1, width-1, h1);
+                RectangleF r2 = new RectangleF(1, 1, width - 1, h1);
                 MGrap.DrawRectangle(p1, r2.X, r2.Y, r2.Width, r2.Height);
                 MGrap.FillRectangle(hbrush1, r2);
 
@@ -123,7 +158,7 @@ GetStatusColor(), this.BackColor);
                 MGrap.FillRectangle(hbrush1, r3);
 
             }
-            
+
 
 
             //GraphicsPath gp=new GraphicsPath(new Point[] {

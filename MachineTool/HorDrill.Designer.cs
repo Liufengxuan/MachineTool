@@ -1,6 +1,6 @@
 ﻿namespace MachineTool
 {
-    partial class PressWheel
+    partial class HorDrill
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -28,16 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // PressWheel
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "PressWheel";
-            this.Size = new System.Drawing.Size(88, 48);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

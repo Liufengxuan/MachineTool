@@ -49,6 +49,12 @@
     <Compile Include="BaseControl.Designer.cs">
       <DependentUpon>BaseControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="HorDrill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HorDrill.Designer.cs">
+      <DependentUpon>HorDrill.cs</DependentUpon>
+    </Compile>
     <Compile Include="PressPlate.cs">
       <SubType>UserControl</SubType>
     </Compile>

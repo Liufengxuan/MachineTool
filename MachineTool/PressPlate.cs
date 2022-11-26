@@ -48,6 +48,8 @@ namespace MachineTool
 
             //------------------------------------
             MGrap.Clear(this.BackColor);
+            if (AntiAliasing)
+                MGrap.SmoothingMode = SmoothingMode.AntiAlias;
             int width = this.Width-1 ;
             int height = this.Height-1 ;
             int w1 = width;

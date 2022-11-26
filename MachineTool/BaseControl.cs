@@ -35,7 +35,13 @@ namespace MachineTool
         private Color _ActColor = Color.Gold;
         private static Color _ThemeColor = Color.Black;
         private bool _IsActivate = false;
-
+        private  bool _AntiAliasing = true;
+        [Description("开启抗锯齿"), Category("MTCommon"), Browsable(true)]
+        public bool AntiAliasing
+        {
+            get { return _AntiAliasing; }
+            set { _AntiAliasing = value; Invalidate(); }
+        }
         [Description("激活状态"), Category("MTCommon"), Browsable(true)]
         public bool IsActivate
         {
