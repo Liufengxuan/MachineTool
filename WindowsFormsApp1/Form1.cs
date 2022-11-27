@@ -36,5 +36,10 @@ namespace WindowsFormsApp1
         {
             verDrill1.IsActivate= !verDrill1.IsActivate;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -6,3 +6,4 @@ C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.
 C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.VerDrill.resources
 C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.csproj.GenerateResource.cache
 C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.PressWheel.resources
+C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.csproj.AssemblyReference.cache

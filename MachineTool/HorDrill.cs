@@ -15,24 +15,55 @@ namespace MachineTool
     {
         public HorDrill()
         {
-            C1 = ThemeColor;
+        
+        }
+        public enum HorDrillTypeEnum
+        {
+            Left=0,
+            Right=1,
+            Top=2,
+            Bottom=3,
         }
 
-        private Color _C1;
-        [Description("中心渐变色1"), Category("MT"), Browsable(true)]
-        public Color C1
+        private HorDrillTypeEnum _HorDrillType ;
+        [Description("类型"), Category("MT"), Browsable(true)]
+        public HorDrillTypeEnum HorDrillType
         {
-            get { return _C1; }
-            set { _C1 = value; }
+            get { return _HorDrillType; }
+            set { _HorDrillType = value; }
         }
 
-        private bool _IsHor = true;
-        [Description("两轮在水平方向"), Category("MT"), Browsable(true)]
-        public bool IsHor
+
+        private SolidBrush _StringBrush;
+
+        private SolidBrush StringBrush
         {
-            get { return _IsHor; }
-            set { _IsHor = value; }
+            get
+            {
+                if (_StringBrush == null)
+                {
+                    _StringBrush = new SolidBrush(this.ForeColor);
+                }
+                return _StringBrush;
+            }
         }
+
+        private StringFormat _drillNumFormat;
+
+        public StringFormat DrillNumForMat
+        {
+            get
+            {
+                if (_drillNumFormat == null)
+                {
+                    _drillNumFormat = new StringFormat();
+                    _drillNumFormat.Alignment = StringAlignment.Center;
+                    _drillNumFormat.LineAlignment = StringAlignment.Center;
+                }
+                return _drillNumFormat;
+            }
+        }
+
 
 
         protected override void OnPaint(PaintEventArgs e)
@@ -55,20 +86,255 @@ namespace MachineTool
             MGrap.Clear(this.BackColor);
             if (AntiAliasing)
                 MGrap.SmoothingMode = SmoothingMode.AntiAlias;
-            int width = this.Width - 3;
-            int height = this.Height - 3;
-            float w1 = width;
-            float h1 = height;
-            RectangleF r1 = new RectangleF(0, 0, w1, h1);
+            int width = this.Width;
+            int height = this.Height ;
+            float w1 = width-1;
+            float h1 = height-1;
+            HatchBrush hbrush1 = new HatchBrush(HatchStyle.DarkDownwardDiagonal,
+GetStatusColor(), this.BackColor);
+            Pen p1 = new Pen(GetStatusColor(), 2);
+            Pen p2 = new Pen(GetStatusColor(), 1);
+            RectangleF r1 = new RectangleF(0,0, 2, 2);
+            RectangleF r2 = new RectangleF(0, 0, 2, 2);
+            RectangleF str= new RectangleF(0, 0, 2, 2);
+            if (HorDrillType == HorDrillTypeEnum.Left)
+            {
+                w1 = width / 2;
+                h1 = height / 3;
 
-            w1 = width * 0.2f;
-            h1 = height * 0.15f;
-            r1.Inflate(-w1, -h1);
+                 r1 = new RectangleF(0, h1, w1, h1);
+                str= r2 = new RectangleF(w1, 0, w1, height);
+                GraphicsPath gp = new GraphicsPath();
+                gp.AddRectangle(r1);
+                gp.AddRectangle(r2);
+                this.Region=new Region(gp);
 
-            GraphicsPath gp = new GraphicsPath();
+                h1 = height * 0.1f;
+                r1.Inflate(0, -1);
+                r2.Inflate(-1, -h1);
+                gp = new GraphicsPath();
+                //gp.AddRectangle(r1);
+                //gp.AddRectangle(r2);
+
+
+                //钻尖长度=r1 长度的百分之25
+                float h = r1.Width * 0.25f;
+                gp = new GraphicsPath(new PointF[] {
+                    new PointF(r1.X, r1.Top+r1.Height/2),
+                    new PointF(r1.X+h,r1.Y),
+                     new PointF(r1.Right,r1.Top),
+                      new PointF(r1.Right, r1.Bottom),
+                        new PointF(r1.X+h, r1.Bottom),
+                          new PointF(r1.X, r1.Top+r1.Height/2),
+                }, new byte[] {
+                    (byte)PathPointType.Start,
+                    (byte)PathPointType.Line,
+                     (byte)PathPointType.Line,
+                      (byte)PathPointType.Line,
+                       (byte)PathPointType.Line,
+                        (byte)PathPointType.Line,
+                });
+
+
+             
+                MGrap.FillPath(hbrush1, gp);
+                MGrap.DrawPath(p2, gp);
+                gp = new GraphicsPath();
+                gp.AddRectangle(r2);
+                PathGradientBrush pgb = new PathGradientBrush(gp);
+                pgb.CenterColor = this.BackColor;
+                // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
+                pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3, r2.Top + r2.Height / 3);
+                pgb.FocusScales = new PointF(0.7f,0f);
+                pgb.SurroundColors = new Color[] { ThemeColor };
+
+               
+                MGrap.FillPath(pgb, gp);
+                MGrap.DrawPath(p1, gp);
+
+
+            }
+
+            if (HorDrillType == HorDrillTypeEnum.Right)
+            {
+                w1 = width / 2;
+                h1 = height / 3;
+              
+
+                 r1 = new RectangleF(w1, h1, w1, h1);
+                str = r2 = new RectangleF(0, 0, w1, height);
+                GraphicsPath gp = new GraphicsPath();
+                gp.AddRectangle(r1);
+                gp.AddRectangle(r2);
+                this.Region = new Region(gp);
+
+                h1 = height * 0.1f;
+                r1.Inflate(0, -1);
+                r2.Inflate(-1, -h1);
+                gp = new GraphicsPath();
+                //gp.AddRectangle(r1);
+                //gp.AddRectangle(r2);
+
+
+                //钻尖长度=r1 长度的百分之25
+                float h = r1.Width * 0.25f;
+                gp = new GraphicsPath(new PointF[] {
+                    new PointF(r1.Right, r1.Top+r1.Height/2),
+                    new PointF(r1.Right-h,r1.Top),
+                     new PointF(r1.Left,r1.Top),
+                      new PointF(r1.Left, r1.Bottom),
+                        new PointF(r1.Right-h, r1.Bottom),
+                            new PointF(r1.Right, r1.Top+r1.Height/2),
+                }, new byte[] {
+                    (byte)PathPointType.Start,
+                    (byte)PathPointType.Line,
+                     (byte)PathPointType.Line,
+                      (byte)PathPointType.Line,
+                       (byte)PathPointType.Line,
+                        (byte)PathPointType.Line,
+                });
+
+
+               
+                MGrap.FillPath(hbrush1, gp);
+                MGrap.DrawPath(p2, gp);
+                gp = new GraphicsPath();
+                gp.AddRectangle(r2);
+                PathGradientBrush pgb = new PathGradientBrush(gp);
+                pgb.CenterColor = this.BackColor;
+                // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
+                pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3*2, r2.Top + r2.Height / 3);
+                pgb.FocusScales = new PointF(0.7f, 0f);
+                pgb.SurroundColors = new Color[] { ThemeColor };
+
+               
+                MGrap.FillPath(pgb, gp);
+                MGrap.DrawPath(p1, gp);
+            }
+
+            if (HorDrillType == HorDrillTypeEnum.Top)
+            {
+               
+                w1 = width / 3;
+                h1 = height / 2;
+            
+
+                 r1 = new RectangleF(w1, 0, w1, h1);
+                str = r2 = new RectangleF(0, h1, width, h1);
+                GraphicsPath gp = new GraphicsPath();
+                gp.AddRectangle(r1);
+                gp.AddRectangle(r2);
+                this.Region = new Region(gp);
+
+                h1 = width * 0.1f;
+                r1.Inflate(-1, 0);
+                r2.Inflate(-h1, -1 );
+                gp = new GraphicsPath();
+                //gp.AddRectangle(r1);
+                //gp.AddRectangle(r2);
+
+
+                //钻尖长度=r1 长度的百分之25
+                float h = r1.Height * 0.25f;
+                gp = new GraphicsPath(new PointF[] {
+                    new PointF(r1.Left+r1.Width/2, r1.Top),
+                    new PointF(r1.Right,r1.Top+h),
+                     new PointF(r1.Right,r1.Bottom),
+                      new PointF(r1.Left, r1.Bottom),
+                        new PointF(r1.Left, r1.Top+h),
+                          new PointF(r1.Left+r1.Width/2, r1.Top),
+                }, new byte[] {
+                    (byte)PathPointType.Start,
+                    (byte)PathPointType.Line,
+                     (byte)PathPointType.Line,
+                      (byte)PathPointType.Line,
+                       (byte)PathPointType.Line,
+                        (byte)PathPointType.Line,
+                });
+
+
+              
+                MGrap.FillPath(hbrush1, gp);
+                MGrap.DrawPath(p2, gp);
+                gp = new GraphicsPath();
+                gp.AddRectangle(r2);
+                PathGradientBrush pgb = new PathGradientBrush(gp);
+                pgb.CenterColor = this.BackColor;
+                // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
+                pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3 , r2.Top + r2.Height / 3);
+                pgb.FocusScales = new PointF(0f, 0.7f);
+                pgb.SurroundColors = new Color[] { ThemeColor };
+
+              
+                MGrap.FillPath(pgb, gp);
+                MGrap.DrawPath(p1, gp);
+            }
+
+            if (HorDrillType == HorDrillTypeEnum.Bottom)
+            {
+               
+                w1 = width / 3;
+                h1 = height / 2;
+              
+
+                 r1 = new RectangleF(w1, h1, w1, h1);
+                str = r2 = new RectangleF(0,0, width, h1);
+                GraphicsPath gp = new GraphicsPath();
+                gp.AddRectangle(r1);
+                gp.AddRectangle(r2);
+                this.Region = new Region(gp);
+
+                h1 = width * 0.1f;
+                r1.Inflate(-1, 0);
+                r2.Inflate(-h1, -1);
+                gp = new GraphicsPath();
+                //gp.AddRectangle(r1);
+                //gp.AddRectangle(r2);
+
+
+                //钻尖长度=r1 长度的百分之25
+                float h = r1.Height * 0.25f;
+                gp = new GraphicsPath(new PointF[] {
+                    new PointF(r1.Left+r1.Width/2, r1.Bottom),
+                    new PointF(r1.Right,r1.Bottom-h),
+                     new PointF(r1.Right,r1.Top),
+                      new PointF(r1.Left, r1.Top),
+                        new PointF(r1.Left, r1.Bottom-h),
+                         new PointF(r1.Left+r1.Width/2, r1.Bottom),
+                }, new byte[] {
+                    (byte)PathPointType.Start,
+                    (byte)PathPointType.Line,
+                     (byte)PathPointType.Line,
+                      (byte)PathPointType.Line,
+                       (byte)PathPointType.Line,
+                        (byte)PathPointType.Line,
+                });
+
+
+              
+                MGrap.FillPath(hbrush1, gp);
+                MGrap.DrawPath(p2, gp);
+                gp = new GraphicsPath();
+                gp.AddRectangle(r2);
+                PathGradientBrush pgb = new PathGradientBrush(gp);
+                pgb.CenterColor = this.BackColor;
+                // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
+                pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3 , r2.Top + r2.Height / 3*2);
+                pgb.FocusScales = new PointF(0f, 0.7f);
+                pgb.SurroundColors = new Color[] { ThemeColor };
+
+               
+                MGrap.FillPath(pgb, gp);
+                MGrap.DrawPath(p1, gp);
+            }
 
 
 
+
+            float d = str.Height > str.Width ? str.Width : str.Height;
+
+            Font f = new Font(this.Font.FontFamily, d / 2.5f, FontStyle.Bold);
+            MGrap.DrawString(DrillNumber, f, StringBrush, str, DrillNumForMat);
             //------------------------------------
             e.Graphics.DrawImage(MImage, 0, 0);
             base.OnPaint(e);
@@ -76,123 +342,5 @@ namespace MachineTool
 
 
 
-        protected  void OnPaint2(PaintEventArgs e)
-        {
-
-            if (MImage == null)
-            {
-                MImage = new Bitmap(this.Width, this.Height);
-                MGrap = Graphics.FromImage(MImage);
-            }
-            else if (MImage.Width != this.Width || MImage.Height != this.Height)
-            {
-                MGrap.Dispose();
-                MImage.Dispose();
-                MImage = new Bitmap(this.Width - 1, this.Height - 1);
-                MGrap = Graphics.FromImage(MImage);
-            }
-
-            //------------------------------------
-            MGrap.Clear(this.BackColor);
-            MGrap.SmoothingMode = SmoothingMode.AntiAlias;
-            int width = this.Width - 3;
-            int height = this.Height - 3;
-            float w1 = width;
-            float h1 = height;
-            RectangleF r1 = new RectangleF(0, 0, w1, h1);
-
-            if (IsHor)
-            {
-                w1 = width * 0.2f;
-                h1 = height * 0.15f;
-                r1.Inflate(-w1, -h1);
-
-                GraphicsPath gp = new GraphicsPath();
-                gp.AddRectangle(r1);
-                PathGradientBrush pgb = new PathGradientBrush(gp);
-                pgb.CenterColor = this.BackColor;
-                pgb.CenterPoint = new PointF(r1.Left + r1.Width / 2, r1.Top + r1.Height / 2);
-                pgb.FocusScales = new PointF(1f, 0f);
-                pgb.SurroundColors = new Color[] { C1 };
-                Pen p1 = new Pen(GetStatusColor(), 2);
-                MGrap.DrawPath(p1, gp);
-                MGrap.FillPath(pgb, gp);
-
-                HatchBrush hbrush1 = new HatchBrush(HatchStyle.LightHorizontal,
-GetStatusColor(), this.BackColor);
-
-                RectangleF r2 = new RectangleF(1, 1, w1, height - 1);
-                MGrap.DrawRectangle(p1, r2.X, r2.Y, r2.Width, r2.Height);
-                MGrap.FillRectangle(hbrush1, r2);
-
-                RectangleF r3 = new RectangleF(r1.Right - 1, 1, w1, height - 1);
-                MGrap.DrawRectangle(p1, r3.X, r3.Y, r3.Width, r3.Height);
-                MGrap.FillRectangle(hbrush1, r3);
-            }
-            else
-            {
-                w1 = width * 0.15f;
-                h1 = height * 0.2f;
-                r1.Inflate(-w1, -h1);
-
-                GraphicsPath gp = new GraphicsPath();
-                gp.AddRectangle(r1);
-                PathGradientBrush pgb = new PathGradientBrush(gp);
-                pgb.CenterColor = this.BackColor;
-                pgb.CenterPoint = new PointF(r1.Left + r1.Width / 2, r1.Top + r1.Height / 2);
-                pgb.FocusScales = new PointF(0f, 1f);
-                pgb.SurroundColors = new Color[] { C1 };
-                Pen p1 = new Pen(GetStatusColor(), 2);
-                MGrap.DrawPath(p1, gp);
-                MGrap.FillPath(pgb, gp);
-
-                HatchBrush hbrush1 = new HatchBrush(HatchStyle.LightVertical,
-GetStatusColor(), this.BackColor);
-
-                RectangleF r2 = new RectangleF(1, 1, width - 1, h1);
-                MGrap.DrawRectangle(p1, r2.X, r2.Y, r2.Width, r2.Height);
-                MGrap.FillRectangle(hbrush1, r2);
-
-                RectangleF r3 = new RectangleF(1, r1.Bottom, width - 1, h1);
-                MGrap.DrawRectangle(p1, r3.X, r3.Y, r3.Width, r3.Height);
-                MGrap.FillRectangle(hbrush1, r3);
-
-            }
-
-
-
-            //GraphicsPath gp=new GraphicsPath(new Point[] {
-            //        new Point(20, 20),
-            //        new Point(50, 20),
-            //         new Point(50, 50),
-            //          new Point(20, 50),
-            //            new Point(20, 20),
-            //    }, new byte[] {
-            //        (byte)PathPointType.Start,
-            //        (byte)PathPointType.Line,
-            //         (byte)PathPointType.Line,
-            //          (byte)PathPointType.Line,
-            //           (byte)PathPointType.Line,
-
-            //    });
-            ////  gp.AddRectangle(r1);
-
-
-            //PathGradientBrush pgb = new PathGradientBrush(gp);
-            //pgb.CenterColor = Color.White;
-            //pgb.CenterPoint = new Point(35, 35);
-            //pgb.FocusScales=new PointF(1f, 0);
-            ////pgb.SurroundColors = new Color[] { Color.Yellow, Color.Red, Color.Gray };
-            //pgb.SurroundColors = new Color[] {
-            //Color.Black,
-            //Color.Black,
-            //};
-
-
-            //MGrap.FillRectangle(lgb, r1);
-            //------------------------------------
-            e.Graphics.DrawImage(MImage, 0, 0);
-            base.OnPaint(e);
-        }
     }
 }

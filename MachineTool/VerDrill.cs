@@ -147,12 +147,16 @@ namespace MachineTool
             float w1= width ;
             float h1 = height ;
             RectangleF r1 = new RectangleF(0,0,w1,h1);
-            r1.Inflate(-1, -1);
-
-
             GraphicsPath g = new GraphicsPath();
             g.AddEllipse(r1);
+            this.Region = new Region(g);
+
+
+            r1.Inflate(-1.5f, -1.5f);
+            g = new GraphicsPath();
+            g.AddEllipse(r1);
             MGrap.DrawPath(P1, g);
+          
          
 
             //中心十字
