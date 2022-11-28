@@ -30,9 +30,9 @@ namespace MachineTool
         }
         #region MyRegion
    private string _drillNumber = "00";
-        private Color _EnterColor = Color.SandyBrown;
-        private Color _PressColor = Color.Tomato;
-        private Color _ActColor = Color.Gold;
+        private Color _EnterColor = Color.Peru;
+        private Color _PressColor = Color.Gold;
+        private Color _ActColor = Color.Lime;
         private static Color _ThemeColor = Color.Black;
         private bool _IsActivate = false;
         private  bool _AntiAliasing = true;

@@ -96,6 +96,7 @@ GetStatusColor(), this.BackColor);
             Pen p2 = new Pen(GetStatusColor(), 1);
             RectangleF r1 = new RectangleF(0,0, 2, 2);
             RectangleF r2 = new RectangleF(0, 0, 2, 2);
+
             RectangleF str= new RectangleF(0, 0, 2, 2);
             if (HorDrillType == HorDrillTypeEnum.Left)
             {
