@@ -7,3 +7,14 @@ C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.
 C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.csproj.GenerateResource.cache
 C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.PressWheel.resources
 C:\Users\liufengxuan\Desktop\WindowsFormsApp1\MachineTool\obj\Debug\MachineTool.csproj.AssemblyReference.cache
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\bin\Debug\MachineTool.dll
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\bin\Debug\MachineTool.pdb
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.AssemblyReference.cache
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.PressWheel.resources
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.VerDrill.resources
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.GenerateResource.cache
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.CoreCompileInputs.cache
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.dll
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.pdb
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.StatusButton.resources
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Debug\MachineTool.AxisDisplay.resources

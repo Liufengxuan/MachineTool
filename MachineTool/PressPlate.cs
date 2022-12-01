@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace MachineTool
 {
+    [ToolboxItem(true)]
     public partial class PressPlate : BaseControl
     {
         public PressPlate()
@@ -69,7 +70,7 @@ namespace MachineTool
             //LinearGradientBrush lgb = new LinearGradientBrush(r1, tColor, Color.Black, LinearGradientMode.Vertical);
            // MGrap.FillPath(lgb, gp);
            // HatchBrush hbrush1 = new HatchBrush(LinesHor? HatchStyle.Horizontal: HatchStyle.Vertical,GetStatusColor(), this.BackColor);
-            HatchBrush hbrush1 = new HatchBrush(HatchStyle.Weave, GetStatusColor(), this.BackColor);
+            HatchBrush hbrush1 = new HatchBrush(LinesHor ? HatchStyle.LightHorizontal : HatchStyle.LightVertical, GetStatusColor(), this.BackColor);
             MGrap.FillPath(hbrush1, gp);
 
             //------------------------------------

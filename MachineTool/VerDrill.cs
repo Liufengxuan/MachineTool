@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace MachineTool
 {
+    [ToolboxItem(true)]
     public partial class VerDrill : BaseControl
     {
         [ToolboxItem(true)]
@@ -164,7 +165,6 @@ namespace MachineTool
             MGrap.DrawLine(P2, r1.Right-r1.Width/2, r1.Top, r1.Right - r1.Width / 2, r1.Bottom);
 
 
-            //渐变色填充内圈
             w1 = width * 0.09f;
             h1 = height * 0.09f;
             RectangleF r2 = RectangleF.Inflate(r1, -w1, -h1);

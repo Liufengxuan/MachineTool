@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,9 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace MachineTool
 {
+
+    [ToolboxItem(false)]
     public partial class BaseControl : UserControl
     {
         public BaseControl()
@@ -29,14 +31,15 @@ namespace MachineTool
 
         }
         #region MyRegion
-   private string _drillNumber = "00";
+        private string _drillNumber = "00";
         private Color _EnterColor = Color.Peru;
         private Color _PressColor = Color.Gold;
         private Color _ActColor = Color.Lime;
         private static Color _ThemeColor = Color.Black;
         private bool _IsActivate = false;
         private  bool _AntiAliasing = true;
-        [Description("开启抗锯齿"), Category("MTCommon"), Browsable(true)]
+        private ButtonInfo _Info = new ButtonInfo();
+       [Description("开启抗锯齿"), Category("MTCommon"), Browsable(true)]
         public bool AntiAliasing
         {
             get { return _AntiAliasing; }
@@ -53,7 +56,7 @@ namespace MachineTool
         /// 圆形的轮廓颜色
         /// </summary>
         [Description("主题颜色"), Category("MTCommon"), Browsable(true)]
-        public Color ThemeColor
+        public  Color ThemeColor
         {
             get { return _ThemeColor; }
             set { _ThemeColor = value; Invalidate(); }
@@ -88,6 +91,19 @@ namespace MachineTool
             set { _EnterColor = value; Invalidate(); }
         }
 
+        [Description("按钮信息"), Category("MTCommon"), Browsable(true)]
+        public ButtonInfo Info
+        {
+            get {
+                if (_Info == null)
+                {
+                    _Info = new ButtonInfo();
+                }
+                _Info.ID = this.Name;
+                return _Info;
+            }
+         
+        }
 
         public static SizeF GetFontSize(Graphics g, Font f, string s)
         {
@@ -127,7 +143,7 @@ namespace MachineTool
             MousePressStatus = false;
             Invalidate();
         }
-
+    
 
         public bool MousePressStatus = false;
         public bool MouseEnterStatus = false;

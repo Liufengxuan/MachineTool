@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace MachineTool
 {
+    [ToolboxItem(true)]
     public partial class PressWheel : BaseControl
     {
         public PressWheel()
