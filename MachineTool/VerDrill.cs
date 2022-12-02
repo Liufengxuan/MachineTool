@@ -68,7 +68,7 @@ namespace MachineTool
             get
             {
                 if (_p1 == null)
-                    _p1 = new Pen(ThemeColor, 1.6f);
+                    _p1 = new Pen(ThemeColor, 1.2f);
                 return _p1;
             }
         }
@@ -80,7 +80,7 @@ namespace MachineTool
             get
             {
                 if (_p2 == null)
-                    _p2 = new Pen(ThemeColor, 3f);
+                    _p2 = new Pen(ThemeColor, 1.8f);
                 return _p2;
             }
         }
@@ -176,8 +176,8 @@ namespace MachineTool
             w1 = width * 0.09f;
             h1 = height * 0.09f;
             RectangleF r3 = RectangleF.Inflate(r2, -w1, -h1);
-            Font f = new Font(this.Font.FontFamily, r2.Height/2.5f, FontStyle.Bold);
-            MGrap.DrawString(DrillNumber, f, StringBrush, r3, DrillNumForMat);
+            Font f = new Font(this.Font.FontFamily, r1.Height/2f, FontStyle.Bold);
+            MGrap.DrawString(DrillNumber, f, StringBrush, r1, DrillNumForMat);
             // MGrap.DrawRectangle(P1,r3.X,r3.Y,r3.Width,r3.Height);
             //------------------------------------
            //this.Region= BmpRgn(MImage, this.BackColor);

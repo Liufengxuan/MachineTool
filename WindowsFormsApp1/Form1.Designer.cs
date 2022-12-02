@@ -58,6 +58,7 @@
             this.axisDisplay1.ActColor = System.Drawing.Color.Lime;
             this.axisDisplay1.AntiAliasing = true;
             this.axisDisplay1.BackColor = System.Drawing.Color.Transparent;
+            this.axisDisplay1.ContentColor = System.Drawing.Color.Empty;
             this.axisDisplay1.EnterColor = System.Drawing.Color.Peru;
             this.axisDisplay1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.axisDisplay1.IsActivate = false;
@@ -68,6 +69,7 @@
             this.axisDisplay1.Size = new System.Drawing.Size(338, 241);
             this.axisDisplay1.TabIndex = 15;
             this.axisDisplay1.ThemeColor = System.Drawing.Color.Black;
+            this.axisDisplay1.TitleColor = System.Drawing.Color.Empty;
             // 
             // verDrill4
             // 
@@ -170,10 +172,10 @@
             this.verDrill1.Center12 = System.Drawing.Color.White;
             this.verDrill1.EnterColor = System.Drawing.Color.Peru;
             this.verDrill1.IsActivate = false;
-            this.verDrill1.Location = new System.Drawing.Point(207, 211);
+            this.verDrill1.Location = new System.Drawing.Point(282, 240);
             this.verDrill1.Name = "verDrill1";
             this.verDrill1.PressColor = System.Drawing.Color.Gold;
-            this.verDrill1.Size = new System.Drawing.Size(39, 39);
+            this.verDrill1.Size = new System.Drawing.Size(28, 28);
             this.verDrill1.TabIndex = 8;
             this.verDrill1.ThemeColor = System.Drawing.Color.Black;
             // 
