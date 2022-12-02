@@ -36,8 +36,10 @@ namespace MachineTool
         private Color _PressColor = Color.Gold;
         private Color _ActColor = Color.Lime;
         private static Color _ThemeColor = Color.Black;
+        private Color _MainColor = Color.Black;
+        private bool _UseThemeColor = true;
         private bool _IsActivate = false;
-        private  bool _AntiAliasing = true;
+        private bool _AntiAliasing = true;
         private ButtonInfo _Info = new ButtonInfo();
        [Description("开启抗锯齿"), Category("MTCommon"), Browsable(true)]
         public bool AntiAliasing
@@ -52,16 +54,34 @@ namespace MachineTool
             set { _IsActivate = value; Invalidate(); }
         }
 
-        /// <summary>
-        /// 圆形的轮廓颜色
-        /// </summary>
+        [Description("是否使用全局主题颜色"), Category("MTCommon"), Browsable(true)]
+        public bool UseThemeColor
+        {
+            get
+            {
+                return _UseThemeColor;
+            }
+            set { _UseThemeColor = value; Invalidate(); }
+        }
         [Description("主题颜色"), Category("MTCommon"), Browsable(true)]
         public  Color ThemeColor
         {
-            get { return _ThemeColor; }
-            set { _ThemeColor = value; Invalidate(); }
+            get { 
+                
+                return _ThemeColor; 
+            
+            }
+            set {
+                    _ThemeColor = value;
+                Invalidate();
+            }
         }
-
+        [Description("控件脱离主题颜色时的颜色"), Category("MTCommon"), Browsable(true)]
+        public Color MainColor
+        {
+            get { return _MainColor; }
+            set { _MainColor = value; Invalidate(); }
+        }
 
         [Description("钻头编号"), Category("MTCommon"), Browsable(true), DefaultValue("00")]
         public string DrillNumber
@@ -163,8 +183,11 @@ namespace MachineTool
             {
                 return ActColor;
             }
-            return ThemeColor;
-
+            return UseThemeColor? ThemeColor:MainColor;
+        }
+        public Color GetMainColor()
+        {
+            return UseThemeColor ? ThemeColor : MainColor;
         }
         internal static GraphicsPath CreateRoundedRectanglePath(Rectangle rect, int cornerRadius)
         {

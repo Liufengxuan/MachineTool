@@ -148,7 +148,7 @@ GetStatusColor(), this.BackColor);
                 // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
                 pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3, r2.Top + r2.Height / 3);
                 pgb.FocusScales = new PointF(0.7f,0f);
-                pgb.SurroundColors = new Color[] { ThemeColor };
+                pgb.SurroundColors = new Color[] { GetMainColor() };
 
                
                 MGrap.FillPath(pgb, gp);
@@ -207,7 +207,7 @@ GetStatusColor(), this.BackColor);
                 // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
                 pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3*2, r2.Top + r2.Height / 3);
                 pgb.FocusScales = new PointF(0.7f, 0f);
-                pgb.SurroundColors = new Color[] { ThemeColor };
+                pgb.SurroundColors = new Color[] { GetMainColor() };
 
                
                 MGrap.FillPath(pgb, gp);
@@ -265,7 +265,7 @@ GetStatusColor(), this.BackColor);
                 // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
                 pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3 , r2.Top + r2.Height / 3);
                 pgb.FocusScales = new PointF(0f, 0.7f);
-                pgb.SurroundColors = new Color[] { ThemeColor };
+                pgb.SurroundColors = new Color[] { GetMainColor() };
 
               
                 MGrap.FillPath(pgb, gp);
@@ -323,7 +323,7 @@ GetStatusColor(), this.BackColor);
                 // pgb.CenterPoint = new PointF(r2.Left + r2.Width / 2, r2.Top + r2.Height / 2);
                 pgb.CenterPoint = new PointF(r2.Left + r2.Width / 3 , r2.Top + r2.Height / 3*2);
                 pgb.FocusScales = new PointF(0f, 0.7f);
-                pgb.SurroundColors = new Color[] { ThemeColor };
+                pgb.SurroundColors = new Color[] { GetMainColor() };
 
                
                 MGrap.FillPath(pgb, gp);

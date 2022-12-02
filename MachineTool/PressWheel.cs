@@ -17,7 +17,7 @@ namespace MachineTool
         public PressWheel()
         {
             InitializeComponent();
-            C1 = ThemeColor;
+            C1 = GetMainColor();
         }
 
         private Color _C1 ;
@@ -79,13 +79,13 @@ namespace MachineTool
                 pgb.CenterColor = this.BackColor;
                 pgb.CenterPoint = new PointF(r1.Left + r1.Width / 2, r1.Top + r1.Height / 2);
                 pgb.FocusScales = new PointF(1f, 0f);
-                pgb.SurroundColors = new Color[] { C1};
+                pgb.SurroundColors = new Color[] { GetStatusColor() };
                 Pen p1 = new Pen(GetStatusColor(), 2);
                 MGrap.DrawPath(p1, gp);
                 MGrap.FillPath(pgb, gp);
 
                 HatchBrush hbrush1 = new HatchBrush(HatchStyle.LightHorizontal,
-GetStatusColor(), this.BackColor);
+GetMainColor(), this.BackColor);
 
                 RectangleF r2 = new RectangleF(1, 1, w1, height - 1);
                 MGrap.DrawRectangle(p1, r2.X, r2.Y, r2.Width, r2.Height);
@@ -107,13 +107,13 @@ GetStatusColor(), this.BackColor);
                 pgb.CenterColor = this.BackColor;
                 pgb.CenterPoint = new PointF(r1.Left + r1.Width / 2, r1.Top + r1.Height / 2);
                 pgb.FocusScales = new PointF(0f, 1f);
-                pgb.SurroundColors = new Color[] { C1 };
+                pgb.SurroundColors = new Color[] { GetStatusColor() };
                 Pen p1 = new Pen(GetStatusColor(), 2);
                 MGrap.DrawPath(p1, gp);
                 MGrap.FillPath(pgb, gp);
 
                 HatchBrush hbrush1 = new HatchBrush(HatchStyle.LightVertical,
-GetStatusColor(), this.BackColor);
+GetMainColor(), this.BackColor);
 
                 RectangleF r2 = new RectangleF(1, 1, width-1, h1);
                 MGrap.DrawRectangle(p1, r2.X, r2.Y, r2.Width, r2.Height);

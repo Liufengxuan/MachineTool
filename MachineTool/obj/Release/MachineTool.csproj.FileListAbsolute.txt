@@ -1,0 +1,11 @@
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\bin\Release\MachineTool.dll
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\bin\Release\MachineTool.pdb
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.csproj.AssemblyReference.cache
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.AxisDisplay.resources
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.PressWheel.resources
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.StatusButton.resources
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.VerDrill.resources
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.csproj.GenerateResource.cache
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.csproj.CoreCompileInputs.cache
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.dll
+C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.pdb

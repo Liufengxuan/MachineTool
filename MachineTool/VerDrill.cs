@@ -68,7 +68,7 @@ namespace MachineTool
             get
             {
                 if (_p1 == null)
-                    _p1 = new Pen(ThemeColor, 1.2f);
+                    _p1 = new Pen(GetMainColor(), 1.2f);
                 return _p1;
             }
         }
@@ -80,7 +80,7 @@ namespace MachineTool
             get
             {
                 if (_p2 == null)
-                    _p2 = new Pen(ThemeColor, 1.8f);
+                    _p2 = new Pen(GetMainColor(), 1.8f);
                 return _p2;
             }
         }

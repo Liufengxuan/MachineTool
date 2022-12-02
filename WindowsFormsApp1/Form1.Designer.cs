@@ -38,7 +38,6 @@
             this.statusButton1 = new MachineTool.StatusButton();
             this.verDrill2 = new MachineTool.VerDrill();
             this.verDrill1 = new MachineTool.VerDrill();
-            this.pressWheel2 = new MachineTool.PressWheel();
             this.pressPlate2 = new MachineTool.PressPlate();
             this.pressWheel1 = new MachineTool.PressWheel();
             this.pressPlate1 = new MachineTool.PressPlate();
@@ -46,6 +45,7 @@
             this.horDrill3 = new MachineTool.HorDrill();
             this.horDrill2 = new MachineTool.HorDrill();
             this.horDrill1 = new MachineTool.HorDrill();
+            this.pressWheel2 = new MachineTool.PressWheel();
             this.SuspendLayout();
             // 
             // timer1
@@ -70,6 +70,7 @@
             this.axisDisplay1.TabIndex = 15;
             this.axisDisplay1.ThemeColor = System.Drawing.Color.Black;
             this.axisDisplay1.TitleColor = System.Drawing.Color.Empty;
+            this.axisDisplay1.UseThemeColor = true;
             // 
             // verDrill4
             // 
@@ -85,6 +86,7 @@
             this.verDrill4.Size = new System.Drawing.Size(39, 39);
             this.verDrill4.TabIndex = 14;
             this.verDrill4.ThemeColor = System.Drawing.Color.Black;
+            this.verDrill4.UseThemeColor = true;
             // 
             // verDrill3
             // 
@@ -100,6 +102,7 @@
             this.verDrill3.Size = new System.Drawing.Size(39, 39);
             this.verDrill3.TabIndex = 13;
             this.verDrill3.ThemeColor = System.Drawing.Color.Black;
+            this.verDrill3.UseThemeColor = true;
             // 
             // pressPlate3
             // 
@@ -114,6 +117,7 @@
             this.pressPlate3.Size = new System.Drawing.Size(140, 41);
             this.pressPlate3.TabIndex = 12;
             this.pressPlate3.ThemeColor = System.Drawing.Color.Black;
+            this.pressPlate3.UseThemeColor = true;
             // 
             // statusButton2
             // 
@@ -126,11 +130,13 @@
             this.statusButton2.IsActivate = true;
             this.statusButton2.Location = new System.Drawing.Point(212, 446);
             this.statusButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.statusButton2.MText = "正AbCd456";
             this.statusButton2.Name = "statusButton2";
             this.statusButton2.PressColor = System.Drawing.Color.Gold;
             this.statusButton2.Size = new System.Drawing.Size(95, 43);
             this.statusButton2.TabIndex = 11;
             this.statusButton2.ThemeColor = System.Drawing.Color.Black;
+            this.statusButton2.UseThemeColor = true;
             // 
             // statusButton1
             // 
@@ -143,11 +149,13 @@
             this.statusButton1.IsActivate = false;
             this.statusButton1.Location = new System.Drawing.Point(78, 446);
             this.statusButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.statusButton1.MText = "正AbCd456";
             this.statusButton1.Name = "statusButton1";
             this.statusButton1.PressColor = System.Drawing.Color.Gold;
             this.statusButton1.Size = new System.Drawing.Size(95, 43);
             this.statusButton1.TabIndex = 10;
             this.statusButton1.ThemeColor = System.Drawing.Color.Black;
+            this.statusButton1.UseThemeColor = true;
             // 
             // verDrill2
             // 
@@ -163,6 +171,7 @@
             this.verDrill2.Size = new System.Drawing.Size(41, 41);
             this.verDrill2.TabIndex = 9;
             this.verDrill2.ThemeColor = System.Drawing.Color.Black;
+            this.verDrill2.UseThemeColor = true;
             // 
             // verDrill1
             // 
@@ -178,21 +187,7 @@
             this.verDrill1.Size = new System.Drawing.Size(28, 28);
             this.verDrill1.TabIndex = 8;
             this.verDrill1.ThemeColor = System.Drawing.Color.Black;
-            // 
-            // pressWheel2
-            // 
-            this.pressWheel2.ActColor = System.Drawing.Color.Lime;
-            this.pressWheel2.AntiAliasing = true;
-            this.pressWheel2.C1 = System.Drawing.Color.Black;
-            this.pressWheel2.EnterColor = System.Drawing.Color.Peru;
-            this.pressWheel2.IsActivate = false;
-            this.pressWheel2.IsHor = false;
-            this.pressWheel2.Location = new System.Drawing.Point(401, 202);
-            this.pressWheel2.Name = "pressWheel2";
-            this.pressWheel2.PressColor = System.Drawing.Color.Gold;
-            this.pressWheel2.Size = new System.Drawing.Size(36, 52);
-            this.pressWheel2.TabIndex = 7;
-            this.pressWheel2.ThemeColor = System.Drawing.Color.Black;
+            this.verDrill1.UseThemeColor = true;
             // 
             // pressPlate2
             // 
@@ -207,6 +202,7 @@
             this.pressPlate2.Size = new System.Drawing.Size(59, 112);
             this.pressPlate2.TabIndex = 6;
             this.pressPlate2.ThemeColor = System.Drawing.Color.Black;
+            this.pressPlate2.UseThemeColor = true;
             // 
             // pressWheel1
             // 
@@ -222,6 +218,7 @@
             this.pressWheel1.Size = new System.Drawing.Size(51, 34);
             this.pressWheel1.TabIndex = 5;
             this.pressWheel1.ThemeColor = System.Drawing.Color.Black;
+            this.pressWheel1.UseThemeColor = true;
             // 
             // pressPlate1
             // 
@@ -236,6 +233,7 @@
             this.pressPlate1.Size = new System.Drawing.Size(58, 139);
             this.pressPlate1.TabIndex = 4;
             this.pressPlate1.ThemeColor = System.Drawing.Color.Black;
+            this.pressPlate1.UseThemeColor = true;
             // 
             // horDrill4
             // 
@@ -250,6 +248,7 @@
             this.horDrill4.Size = new System.Drawing.Size(67, 38);
             this.horDrill4.TabIndex = 3;
             this.horDrill4.ThemeColor = System.Drawing.Color.Black;
+            this.horDrill4.UseThemeColor = true;
             // 
             // horDrill3
             // 
@@ -264,6 +263,7 @@
             this.horDrill3.Size = new System.Drawing.Size(34, 79);
             this.horDrill3.TabIndex = 2;
             this.horDrill3.ThemeColor = System.Drawing.Color.Black;
+            this.horDrill3.UseThemeColor = true;
             // 
             // horDrill2
             // 
@@ -278,6 +278,7 @@
             this.horDrill2.Size = new System.Drawing.Size(48, 94);
             this.horDrill2.TabIndex = 1;
             this.horDrill2.ThemeColor = System.Drawing.Color.Black;
+            this.horDrill2.UseThemeColor = true;
             // 
             // horDrill1
             // 
@@ -292,6 +293,24 @@
             this.horDrill1.Size = new System.Drawing.Size(67, 38);
             this.horDrill1.TabIndex = 0;
             this.horDrill1.ThemeColor = System.Drawing.Color.Black;
+            this.horDrill1.UseThemeColor = true;
+            // 
+            // pressWheel2
+            // 
+            this.pressWheel2.ActColor = System.Drawing.Color.Lime;
+            this.pressWheel2.AntiAliasing = true;
+            this.pressWheel2.C1 = System.Drawing.Color.Black;
+            this.pressWheel2.EnterColor = System.Drawing.Color.Peru;
+            this.pressWheel2.IsActivate = false;
+            this.pressWheel2.IsHor = false;
+            this.pressWheel2.Location = new System.Drawing.Point(427, 202);
+            this.pressWheel2.MainColor = System.Drawing.Color.IndianRed;
+            this.pressWheel2.Name = "pressWheel2";
+            this.pressWheel2.PressColor = System.Drawing.Color.Gold;
+            this.pressWheel2.Size = new System.Drawing.Size(75, 88);
+            this.pressWheel2.TabIndex = 16;
+            this.pressWheel2.ThemeColor = System.Drawing.Color.IndianRed;
+            this.pressWheel2.UseThemeColor = false;
             // 
             // Form1
             // 
@@ -299,6 +318,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(932, 555);
+            this.Controls.Add(this.pressWheel2);
             this.Controls.Add(this.axisDisplay1);
             this.Controls.Add(this.verDrill4);
             this.Controls.Add(this.verDrill3);
@@ -307,7 +327,6 @@
             this.Controls.Add(this.statusButton1);
             this.Controls.Add(this.verDrill2);
             this.Controls.Add(this.verDrill1);
-            this.Controls.Add(this.pressWheel2);
             this.Controls.Add(this.pressPlate2);
             this.Controls.Add(this.pressWheel1);
             this.Controls.Add(this.pressPlate1);
@@ -331,7 +350,6 @@
         private MachineTool.PressPlate pressPlate1;
         private MachineTool.PressWheel pressWheel1;
         private MachineTool.PressPlate pressPlate2;
-        private MachineTool.PressWheel pressWheel2;
         private MachineTool.VerDrill verDrill1;
         private MachineTool.VerDrill verDrill2;
         private MachineTool.StatusButton statusButton1;
@@ -340,6 +358,7 @@
         private MachineTool.VerDrill verDrill3;
         private MachineTool.VerDrill verDrill4;
         private MachineTool.AxisDisplay axisDisplay1;
+        private MachineTool.PressWheel pressWheel2;
     }
 }
 

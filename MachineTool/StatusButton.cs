@@ -23,7 +23,7 @@ namespace MachineTool
 
         public string _Text = "正AbCd456";
         [Description("文字"), Category("MT"), Browsable(true)]
-        public string Text
+        public  string MText
         {
             get { return _Text; }
             set { _Text = value; }
@@ -143,7 +143,7 @@ namespace MachineTool
 
             //MGrap.DrawRectangle(BorderPen, borderRec);
             Font f = this.Font;
-            MGrap.DrawString(Text, f, StringBrush, borderRec, TextFormat);
+            MGrap.DrawString(MText, f, StringBrush, borderRec, TextFormat);
 
 
             //------------------------------------

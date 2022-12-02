@@ -63,7 +63,7 @@ namespace MachineTool
 
             r1.Inflate(-2, -2);
              gp=  CreateRoundedRectanglePath(r1, 5);
-            MGrap.DrawPath(new Pen(ThemeColor, 2), gp);
+            MGrap.DrawPath(new Pen(GetMainColor(), 2), gp);
 
             //Color tColor = GetStatusColor();
             //if (tColor == ThemeColor) tColor = this.BackColor;
