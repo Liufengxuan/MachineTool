@@ -35,8 +35,37 @@ namespace MachineTool
             set { _Command2 = value; }
         }
 
+        private string _Command3;
+        [Description("命令3")]
+        public string Command3
+        {
+            get { return _Command3; }
+            set { _Command3 = value; }
+        }
 
-        
-    
+        private string _Command4;
+        [Description("命令4")]
+        public string Command4
+        {
+            get { return _Command4; }
+            set { _Command4 = value; }
+        }
+
+        private string _Command5;
+        [Description("命令5")]
+        public string Command5
+        {
+            get { return _Command5; }
+            set { _Command5 = value; }
+        }
+
+
+        private string _Command6;
+        [Description("命令5")]
+        public string Command6
+        {
+            get { return _Command6; }
+            set { _Command6 = value; }
+        }
     }
 }
