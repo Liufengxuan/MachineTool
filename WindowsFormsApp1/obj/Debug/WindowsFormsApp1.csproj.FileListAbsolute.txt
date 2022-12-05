@@ -19,10 +19,10 @@ C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\bin\Debug\MachineTool.dll
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\bin\Debug\MachineTool.pdb
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
-C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources

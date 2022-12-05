@@ -28,7 +28,7 @@ namespace MachineTool
             this.MouseLeave += Base_MouseLeave;
             this.MouseDown += Base_MouseDown;
             this.MouseUp += Base_MouseUp;
-
+           
         }
         #region MyRegion
         private string _drillNumber = "00";
@@ -40,7 +40,7 @@ namespace MachineTool
         private bool _UseThemeColor = true;
         private bool _IsActivate = false;
         private bool _AntiAliasing = true;
-        private ButtonInfo _Info = new ButtonInfo();
+        private ButtonInfo _Info ;
        [Description("开启抗锯齿"), Category("MTCommon"), Browsable(true)]
         public bool AntiAliasing
         {
@@ -121,6 +121,11 @@ namespace MachineTool
                 }
                 _Info.ID = this.Name;
                 return _Info;
+            }
+
+            set {
+
+                _Info = value;
             }
          
         }
