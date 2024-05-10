@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MachineTool</RootNamespace>
     <AssemblyName>MachineTool</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,12 +56,36 @@
     <Compile Include="BaseControl.Designer.cs">
       <DependentUpon>BaseControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Belt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Belt.Designer.cs">
+      <DependentUpon>Belt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bulb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bulb.Designer.cs">
+      <DependentUpon>Bulb.cs</DependentUpon>
+    </Compile>
     <Compile Include="ButtonInfo.cs" />
     <Compile Include="HorDrill.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="HorDrill.Designer.cs">
       <DependentUpon>HorDrill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Machine.Designer.cs">
+      <DependentUpon>Machine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MGroupBox.Designer.cs">
+      <DependentUpon>MGroupBox.cs</DependentUpon>
     </Compile>
     <Compile Include="PressPlate.cs">
       <SubType>UserControl</SubType>
@@ -75,6 +100,12 @@
       <DependentUpon>PressWheel.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Roller.Designer.cs">
+      <DependentUpon>Roller.cs</DependentUpon>
+    </Compile>
     <Compile Include="StatusButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +122,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AxisDisplay.resx">
       <DependentUpon>AxisDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bulb.resx">
+      <DependentUpon>Bulb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PressWheel.resx">
       <DependentUpon>PressWheel.cs</DependentUpon>

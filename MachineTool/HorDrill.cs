@@ -336,7 +336,7 @@ GetStatusColor(), this.BackColor);
             float d = str.Height > str.Width ? str.Width : str.Height;
 
             Font f = new Font(this.Font.FontFamily, d / 2.5f, FontStyle.Bold);
-            MGrap.DrawString(DrillNumber, f, StringBrush, str, DrillNumForMat);
+            MGrap.DrawString(Number, f, StringBrush, str, DrillNumForMat);
             //------------------------------------
             e.Graphics.DrawImage(MImage, 0, 0);
             base.OnPaint(e);

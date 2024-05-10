@@ -31,11 +31,11 @@ namespace MachineTool
            
         }
         #region MyRegion
-        private string _drillNumber = "00";
+        private string _number = "00";
         private Color _EnterColor = Color.Peru;
         private Color _PressColor = Color.Gold;
         private Color _ActColor = Color.Lime;
-        private static Color _ThemeColor = Color.Black;
+        internal static Color _ThemeColor = Color.Black;
         private Color _MainColor = Color.Black;
         private bool _UseThemeColor = true;
         private bool _IsActivate = false;
@@ -64,7 +64,7 @@ namespace MachineTool
             set { _UseThemeColor = value; Invalidate(); }
         }
         [Description("主题颜色"), Category("MTCommon"), Browsable(true)]
-        public  Color ThemeColor
+        public   Color ThemeColor
         {
             get { 
                 
@@ -84,10 +84,10 @@ namespace MachineTool
         }
 
         [Description("钻头编号"), Category("MTCommon"), Browsable(true), DefaultValue("00")]
-        public string DrillNumber
+        public string Number
         {
-            get { return _drillNumber; }
-            set { _drillNumber = value; }
+            get { return _number; }
+            set { _number = value; }
         }
         [Description("鼠标按下时的颜色"), Category("MTCommon"), Browsable(true)]
         public Color PressColor

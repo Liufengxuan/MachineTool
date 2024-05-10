@@ -177,7 +177,7 @@ namespace MachineTool
             h1 = height * 0.09f;
             RectangleF r3 = RectangleF.Inflate(r2, -w1, -h1);
             Font f = new Font(this.Font.FontFamily, r1.Height/2f, FontStyle.Bold);
-            MGrap.DrawString(DrillNumber, f, StringBrush, r1, DrillNumForMat);
+            MGrap.DrawString(Number, f, StringBrush, r1, DrillNumForMat);
             // MGrap.DrawRectangle(P1,r3.X,r3.Y,r3.Width,r3.Height);
             //------------------------------------
            //this.Region= BmpRgn(MImage, this.BackColor);

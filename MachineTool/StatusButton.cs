@@ -90,8 +90,6 @@ namespace MachineTool
                     _TextFormat.Alignment = StringAlignment.Center;
                     _TextFormat.LineAlignment = StringAlignment.Center;
                     _TextFormat.FormatFlags = StringFormatFlags.NoWrap;
-
-
                 }
                 return _TextFormat;
             }
@@ -133,7 +131,7 @@ namespace MachineTool
             PathGradientBrush pgb = new PathGradientBrush(gp);
             pgb.CenterColor = BackColor;
             pgb.CenterPoint = new PointF(borderRec.Left + borderRec.Width / 2, borderRec.Top + borderRec.Height / 2);
-            pgb.FocusScales = new PointF(0.95f, 0.5f);
+            pgb.FocusScales = new PointF(0.9f, 0.2f);
             pgb.SurroundColors = new Color[] {Color.FromArgb(85, GetStatusColor()) };
             MGrap.FillPath(pgb, gp);
 
