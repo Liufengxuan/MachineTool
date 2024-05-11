@@ -84,7 +84,7 @@ namespace MachineTool
         {
             get
             {
-                if (_TextFormat == null)
+                if (_TextFormat==null)
                 {
                     _TextFormat = new StringFormat();
                     _TextFormat.Alignment = StringAlignment.Center;
@@ -131,17 +131,24 @@ namespace MachineTool
             PathGradientBrush pgb = new PathGradientBrush(gp);
             pgb.CenterColor = BackColor;
             pgb.CenterPoint = new PointF(borderRec.Left + borderRec.Width / 2, borderRec.Top + borderRec.Height / 2);
-            pgb.FocusScales = new PointF(0.9f, 0.2f);
-            pgb.SurroundColors = new Color[] {Color.FromArgb(85, GetStatusColor()) };
+            pgb.FocusScales = new PointF(0.85f, 0.1f);
+            pgb.SurroundColors = new Color[] {Color.FromArgb(100, GetStatusColor()) };
             MGrap.FillPath(pgb, gp);
 
             int h1=Convert.ToInt32( borderRec.Height * 0.1f);
             int w1 = Convert.ToInt32(borderRec.Width * 0.1f);
-            borderRec.Inflate(0, -h1);
 
-            //MGrap.DrawRectangle(BorderPen, borderRec);
-            Font f = this.Font;
-            MGrap.DrawString(MText, f, StringBrush, borderRec, TextFormat);
+
+            borderRec.Inflate(0, -h1);
+            MGrap.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            MGrap.DrawString(MText, this.Font, StringBrush, borderRec,TextFormat );
+
+            //Size s= MGrap.MeasureString(MText, f).ToSize();
+            //float x = (borderRec.Width-s.Width) / 2;
+            //float y=( borderRec.Height-s.Height) / 2;
+            //MGrap.DrawString(MText, f, Brushes.Black, x,y);
+
+   
 
 
             //------------------------------------

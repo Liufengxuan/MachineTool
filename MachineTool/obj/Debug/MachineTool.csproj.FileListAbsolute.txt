@@ -22,6 +22,7 @@ E:\蓝象\MachineTool-main\MachineTool\MachineTool\bin\Debug\MachineTool.dll
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\bin\Debug\MachineTool.pdb
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.AssemblyReference.cache
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.AxisDisplay.resources
+E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.Bulb.resources
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.PressWheel.resources
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.StatusButton.resources
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.VerDrill.resources
@@ -29,4 +30,3 @@ E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.CoreCompileInputs.cache
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.dll
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.pdb
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.Bulb.resources

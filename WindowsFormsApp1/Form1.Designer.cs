@@ -42,6 +42,8 @@
             MachineTool.ButtonInfo buttonInfo12 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo13 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo14 = new MachineTool.ButtonInfo();
+            this.button1 = new System.Windows.Forms.Button();
+            this.mGroupBox2 = new MachineTool.MGroupBox();
             this.roller2 = new MachineTool.Roller();
             this.roller1 = new MachineTool.Roller();
             this.machine2 = new MachineTool.Machine();
@@ -58,6 +60,29 @@
             this.axisDisplay1 = new MachineTool.AxisDisplay();
             this.verDrill1 = new MachineTool.VerDrill();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(399, 110);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // mGroupBox2
+            // 
+            this.mGroupBox2.BoderColor = System.Drawing.Color.Black;
+            this.mGroupBox2.BorderWidth = 1;
+            this.mGroupBox2.FontColor = System.Drawing.Color.Black;
+            this.mGroupBox2.Location = new System.Drawing.Point(27, 33);
+            this.mGroupBox2.Name = "mGroupBox2";
+            this.mGroupBox2.Size = new System.Drawing.Size(289, 277);
+            this.mGroupBox2.TabIndex = 15;
+            this.mGroupBox2.Text = "mGroupBox2";
+            this.mGroupBox2.TitleFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.mGroupBox2.TitleText = "GroupBoxControl";
+            this.mGroupBox2.UseThemeColor = false;
             // 
             // roller2
             // 
@@ -136,6 +161,7 @@
             this.machine2.BanContent = "abc123汉.nc";
             this.machine2.BanMode = 2;
             this.machine2.EnterColor = System.Drawing.Color.Peru;
+            this.machine2.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             buttonInfo3.Command1 = null;
             buttonInfo3.Command2 = null;
             buttonInfo3.Command3 = null;
@@ -148,6 +174,7 @@
             this.machine2.JtLoc = 0.5F;
             this.machine2.Location = new System.Drawing.Point(576, 265);
             this.machine2.MainColor = System.Drawing.Color.Black;
+            this.machine2.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.machine2.MColor1 = System.Drawing.SystemColors.ActiveCaption;
             this.machine2.MColor2 = System.Drawing.Color.LimeGreen;
             this.machine2.MWork = true;
@@ -318,7 +345,7 @@
             this.statusButton1.BackColor = System.Drawing.Color.Transparent;
             this.statusButton1.borderColor = System.Drawing.Color.IndianRed;
             this.statusButton1.EnterColor = System.Drawing.Color.Peru;
-            this.statusButton1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.statusButton1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             buttonInfo9.Command1 = null;
             buttonInfo9.Command2 = null;
             buttonInfo9.Command3 = null;
@@ -328,13 +355,13 @@
             buttonInfo9.ID = "StatusButton";
             this.statusButton1.Info = buttonInfo9;
             this.statusButton1.IsActivate = false;
-            this.statusButton1.Location = new System.Drawing.Point(956, 188);
+            this.statusButton1.Location = new System.Drawing.Point(828, 166);
             this.statusButton1.MainColor = System.Drawing.Color.OrangeRed;
             this.statusButton1.Margin = new System.Windows.Forms.Padding(4);
             this.statusButton1.MText = "正AbCd456";
             this.statusButton1.Name = "statusButton1";
             this.statusButton1.PressColor = System.Drawing.Color.Gold;
-            this.statusButton1.Size = new System.Drawing.Size(124, 42);
+            this.statusButton1.Size = new System.Drawing.Size(202, 57);
             this.statusButton1.TabIndex = 5;
             this.statusButton1.ThemeColor = System.Drawing.SystemColors.ActiveCaption;
             this.statusButton1.UseThemeColor = false;
@@ -467,6 +494,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1278, 748);
+            this.Controls.Add(this.mGroupBox2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.roller2);
             this.Controls.Add(this.roller1);
             this.Controls.Add(this.machine2);
@@ -505,5 +534,7 @@
         private MachineTool.Machine machine2;
         private MachineTool.Roller roller1;
         private MachineTool.Roller roller2;
+        private System.Windows.Forms.Button button1;
+        private MachineTool.MGroupBox mGroupBox2;
     }
 }
