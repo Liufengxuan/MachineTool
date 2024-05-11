@@ -71,10 +71,7 @@ namespace MachineTool
                 return _ThemeColor; 
             
             }
-            set {
-                    _ThemeColor = value;
-                Invalidate();
-            }
+         
         }
         [Description("控件脱离主题颜色时的颜色"), Category("MTCommon"), Browsable(true)]
         public Color MainColor
@@ -168,12 +165,12 @@ namespace MachineTool
             MousePressStatus = false;
             Invalidate();
         }
-    
 
-        public bool MousePressStatus = false;
-        public bool MouseEnterStatus = false;
 
-        public Color GetStatusColor()
+        internal bool MousePressStatus = false;
+        internal bool MouseEnterStatus = false;
+
+        internal Color GetStatusColor()
         {
             if (MousePressStatus)
             {
@@ -190,7 +187,7 @@ namespace MachineTool
             }
             return UseThemeColor? ThemeColor:MainColor;
         }
-        public Color GetMainColor()
+        internal Color GetMainColor()
         {
             return UseThemeColor ? ThemeColor : MainColor;
         }
@@ -208,5 +205,12 @@ namespace MachineTool
             roundedRect.CloseFigure();
             return roundedRect;
         }
+
+        public static void ChangeThemeColor(Color color)
+        {
+            _ThemeColor = color;
+        }
+
+
     }
 }

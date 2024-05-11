@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\machinetool\\statusbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\machinetool\\basecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|solutionrelative:machinetool\\basecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|e:\\\u84DD\u8C61\\machinetool-main\\machinetool\\machinetool\\statusbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|solutionrelative:machinetool\\statusbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|solutionrelative:machinetool\\statusbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|e:\\\u84DD\u8C61\\machinetool-main\\machinetool\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -23,23 +31,15 @@
       "RelativeMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MachineTool||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|e:\\\u84DD\u8C61\\machinetool-main\\machinetool\\machinetool\\belt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\machinetool\\belt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|solutionrelative:machinetool\\belt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\machinetool\\buttoninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|solutionrelative:machinetool\\buttoninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\machinetool\\basecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|solutionrelative:machinetool\\basecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\machinetool\\basecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -55,12 +55,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\machinetool\\mgroupbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|solutionrelative:machinetool\\mgroupbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{056EE64B-1FE5-4238-BEFF-DEBC3ACABCE1}|WindowsFormsApp1\\WindowsFormsApp1.csproj|e:\\\u84DD\u8C61\\machinetool-main\\machinetool\\windowsformsapp1\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B7ADF5E-5677-4A40-876D-85EED754AFB1}|MachineTool\\MachineTool.csproj|e:\\\u84DD\u8C61\\machinetool-main\\machinetool\\machinetool\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,11 +64,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Belt.cs",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\Belt.cs",
               "RelativeDocumentMoniker": "MachineTool\\Belt.cs",
@@ -82,24 +76,22 @@
               "RelativeToolTip": "MachineTool\\Belt.cs",
               "ViewState": "AQIAAHIAAAAAAAAAAAAIwJYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T02:40:37.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T02:40:37.14Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
               "ToolTip": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\WindowsFormsApp1\\Form1.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T02:34:45.557Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "WhenOpened": "2024-05-11T02:34:45.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "StatusButton.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\StatusButton.cs",
               "RelativeDocumentMoniker": "MachineTool\\StatusButton.cs",
@@ -111,32 +103,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MachineTool",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\MachineTool.csproj",
               "RelativeDocumentMoniker": "MachineTool\\MachineTool.csproj",
               "ToolTip": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\MachineTool.csproj",
               "RelativeToolTip": "MachineTool\\MachineTool.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-10T08:39:18.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T08:39:18.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\WindowsFormsApp1\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.Designer.cs",
               "ToolTip": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\WindowsFormsApp1\\Form1.Designer.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgCAAAoAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAD4v3UAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T07:48:05.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
@@ -144,25 +135,24 @@
               "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:23:53.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T07:23:53.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "StatusButton.cs",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\StatusButton.cs",
               "RelativeDocumentMoniker": "MachineTool\\StatusButton.cs",
               "ToolTip": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\StatusButton.cs",
               "RelativeToolTip": "MachineTool\\StatusButton.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAkwIYAAAA4AAAA",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAkwIoAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T07:22:27.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ButtonInfo.cs",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\ButtonInfo.cs",
               "RelativeDocumentMoniker": "MachineTool\\ButtonInfo.cs",
@@ -170,8 +160,7 @@
               "RelativeToolTip": "MachineTool\\ButtonInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:21:58.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T07:21:58.391Z"
             },
             {
               "$type": "Document",
@@ -183,8 +172,7 @@
               "RelativeToolTip": "MachineTool\\Roller.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAAAwwCQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:20:26.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T07:20:26.49Z"
             },
             {
               "$type": "Document",
@@ -200,25 +188,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MGroupBox.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\MGroupBox.cs",
               "RelativeDocumentMoniker": "MachineTool\\MGroupBox.cs",
               "ToolTip": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\MGroupBox.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "MachineTool\\MGroupBox.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T07:18:05.449Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
+              "WhenOpened": "2024-05-10T07:18:05.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "BaseControl.cs",
               "DocumentMoniker": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\BaseControl.cs",
               "RelativeDocumentMoniker": "MachineTool\\BaseControl.cs",
               "ToolTip": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\MachineTool\\BaseControl.cs",
               "RelativeToolTip": "MachineTool\\BaseControl.cs",
-              "ViewState": "AQIAALAAAAAAAAAAAAAAADsAAAAPAAAA",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAUwKkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T07:17:44.857Z",
               "EditorCaption": ""
@@ -244,8 +231,7 @@
               "ToolTip": "E:\\\u84DD\u8C61\\MachineTool-main\\MachineTool\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
               "RelativeToolTip": "WindowsFormsApp1\\WindowsFormsApp1.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-11T02:34:15.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T02:34:15.547Z"
             }
           ]
         }

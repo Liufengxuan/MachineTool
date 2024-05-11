@@ -12,3 +12,8 @@ C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsA
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
 C:\Users\fengxuan\Desktop\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
+E:\蓝象\MachineTool-main\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\蓝象\MachineTool-main\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form1.resources
+E:\蓝象\MachineTool-main\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources
+E:\蓝象\MachineTool-main\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\蓝象\MachineTool-main\MachineTool\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CoreCompileInputs.cache
