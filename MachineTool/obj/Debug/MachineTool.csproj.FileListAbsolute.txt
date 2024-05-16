@@ -30,3 +30,4 @@ E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.csproj.CoreCompileInputs.cache
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.dll
 E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.pdb
+E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Debug\MachineTool.BaseForm.resources

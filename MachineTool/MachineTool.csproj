@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MachineTool</RootNamespace>
     <AssemblyName>MachineTool</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -59,6 +59,12 @@
     <Compile Include="BaseControl.Designer.cs">
       <DependentUpon>BaseControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Belt.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
     <Compile Include="MGroupBox.Designer.cs">
       <DependentUpon>MGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NavBar.Designer.cs">
+      <DependentUpon>NavBar.cs</DependentUpon>
     </Compile>
     <Compile Include="PressPlate.cs">
       <SubType>UserControl</SubType>
@@ -125,6 +137,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AxisDisplay.resx">
       <DependentUpon>AxisDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bulb.resx">
       <DependentUpon>Bulb.cs</DependentUpon>

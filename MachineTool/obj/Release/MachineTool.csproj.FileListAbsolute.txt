@@ -9,15 +9,3 @@ C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.csproj
 C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.csproj.CoreCompileInputs.cache
 C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.dll
 C:\Users\fengxuan\Desktop\MachineTool\MachineTool\obj\Release\MachineTool.pdb
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\bin\Release\MachineTool.dll
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\bin\Release\MachineTool.pdb
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.csproj.AssemblyReference.cache
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.AxisDisplay.resources
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.Bulb.resources
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.PressWheel.resources
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.StatusButton.resources
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.VerDrill.resources
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.csproj.GenerateResource.cache
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.csproj.CoreCompileInputs.cache
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.dll
-E:\蓝象\MachineTool-main\MachineTool\MachineTool\obj\Release\MachineTool.pdb
