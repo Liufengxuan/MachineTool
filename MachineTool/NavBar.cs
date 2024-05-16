@@ -26,7 +26,7 @@ namespace MachineTool
             this.MouseDown += Form_MouseDown;
             this.MouseUp += Form_MouseUp;
             this.MouseMove += Form_MouseMove;
-            this.MinimumSize = new System.Drawing.Size(300, 150);
+            this.MinimumSize = new System.Drawing.Size(10, 10);
         }
 
 
