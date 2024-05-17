@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace MachineTool
 {
     [ToolboxItem(true)]
-    public partial class NavBar : ContainerControl
+    public partial class NavBar : Panel
     {
         public NavBar()
         {
@@ -100,7 +100,12 @@ namespace MachineTool
             set { _DrawBorder = value; this.Invalidate(); }
         }
 
-
+        [Description("拖动"), Category("NavBar"), Browsable(true)]
+        public bool Tuodong
+        {
+            get { return _DrawBorder; }
+            set { _DrawBorder = value; this.Invalidate(); }
+        }
 
         private bool _UseThemeColor = true;
         [Description("是否使用全局主题颜色"), Category("NavBar"), Browsable(true)]
@@ -193,7 +198,7 @@ namespace MachineTool
             if (e.Button == MouseButtons.Left)
             {
                 isMouseDown = true;
-                currentFormLocation = this.ParentForm.Location;
+                currentFormLocation = this.Parent.Location;
                 currentMouseOffset = Control.MousePosition;
             }
         }
@@ -215,9 +220,10 @@ namespace MachineTool
                 Point pt = Control.MousePosition;
                 rangeX = currentMouseOffset.X - pt.X;
                 rangeY = currentMouseOffset.Y - pt.Y;
-                this.ParentForm.Location= new Point(currentFormLocation.X - rangeX, currentFormLocation.Y - rangeY);
+                this.Parent.Location= new Point(currentFormLocation.X - rangeX, currentFormLocation.Y - rangeY);
             }
         }
+        
 
     }
 }

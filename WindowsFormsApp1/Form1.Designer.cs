@@ -43,6 +43,7 @@
             MachineTool.ButtonInfo buttonInfo12 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo13 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo14 = new MachineTool.ButtonInfo();
+            MachineTool.ButtonInfo buttonInfo15 = new MachineTool.ButtonInfo();
             this.navBar2 = new MachineTool.NavBar();
             this.mGroupBox2 = new MachineTool.MGroupBox();
             this.belt1 = new MachineTool.Belt();
@@ -60,6 +61,7 @@
             this.horDrill1 = new MachineTool.HorDrill();
             this.axisDisplay1 = new MachineTool.AxisDisplay();
             this.verDrill1 = new MachineTool.VerDrill();
+            this.statusButton2 = new MachineTool.StatusButton();
             this.mGroupBox2.SuspendLayout();
             this.mGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +82,7 @@
             this.navBar2.Location = new System.Drawing.Point(0, 0);
             this.navBar2.MainColor = System.Drawing.Color.LightSkyBlue;
             this.navBar2.MainColor2 = System.Drawing.Color.Transparent;
+            this.navBar2.MinimumSize = new System.Drawing.Size(10, 10);
             this.navBar2.Name = "navBar2";
             this.navBar2.PathGradientParam = new System.Drawing.PointF[] {
         ((System.Drawing.PointF)(resources.GetObject("navBar2.PathGradientParam"))),
@@ -87,6 +90,7 @@
             this.navBar2.Size = new System.Drawing.Size(1278, 194);
             this.navBar2.TabIndex = 17;
             this.navBar2.Text = "navBar2";
+            this.navBar2.Tuodong = false;
             this.navBar2.UseThemeColor = false;
             // 
             // mGroupBox2
@@ -371,8 +375,12 @@
             this.statusButton1.Location = new System.Drawing.Point(867, 596);
             this.statusButton1.MainColor = System.Drawing.Color.OrangeRed;
             this.statusButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.statusButton1.MRounde = 8;
             this.statusButton1.MText = "正AbCd456";
             this.statusButton1.Name = "statusButton1";
+            this.statusButton1.PathGradientParam = new System.Drawing.PointF[] {
+        ((System.Drawing.PointF)(resources.GetObject("statusButton1.PathGradientParam"))),
+        ((System.Drawing.PointF)(resources.GetObject("statusButton1.PathGradientParam1")))};
             this.statusButton1.PressColor = System.Drawing.Color.Gold;
             this.statusButton1.Size = new System.Drawing.Size(202, 57);
             this.statusButton1.TabIndex = 5;
@@ -496,11 +504,43 @@
             this.verDrill1.TabIndex = 0;
             this.verDrill1.UseThemeColor = true;
             // 
+            // statusButton2
+            // 
+            this.statusButton2.ActColor = System.Drawing.Color.Lime;
+            this.statusButton2.AntiAliasing = true;
+            this.statusButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.statusButton2.borderColor = System.Drawing.Color.DarkGray;
+            this.statusButton2.EnterColor = System.Drawing.Color.Peru;
+            this.statusButton2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            buttonInfo15.Command1 = null;
+            buttonInfo15.Command2 = null;
+            buttonInfo15.Command3 = null;
+            buttonInfo15.Command4 = null;
+            buttonInfo15.Command5 = null;
+            buttonInfo15.Command6 = null;
+            buttonInfo15.ID = "StatusButton";
+            this.statusButton2.Info = buttonInfo15;
+            this.statusButton2.IsActivate = false;
+            this.statusButton2.Location = new System.Drawing.Point(403, 247);
+            this.statusButton2.MainColor = System.Drawing.Color.Black;
+            this.statusButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.statusButton2.MRounde = 8;
+            this.statusButton2.MText = "正AbCd456";
+            this.statusButton2.Name = "statusButton2";
+            this.statusButton2.PathGradientParam = new System.Drawing.PointF[] {
+        ((System.Drawing.PointF)(resources.GetObject("statusButton2.PathGradientParam"))),
+        ((System.Drawing.PointF)(resources.GetObject("statusButton2.PathGradientParam1")))};
+            this.statusButton2.PressColor = System.Drawing.Color.Gold;
+            this.statusButton2.Size = new System.Drawing.Size(131, 58);
+            this.statusButton2.TabIndex = 18;
+            this.statusButton2.UseThemeColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1278, 748);
+            this.Controls.Add(this.statusButton2);
             this.Controls.Add(this.navBar2);
             this.Controls.Add(this.mGroupBox2);
             this.Controls.Add(this.roller2);
@@ -543,5 +583,6 @@
         private MachineTool.Roller roller2;
         private MachineTool.MGroupBox mGroupBox2;
         private MachineTool.NavBar navBar2;
+        private MachineTool.StatusButton statusButton2;
     }
 }

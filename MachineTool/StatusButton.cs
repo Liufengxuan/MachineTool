@@ -18,9 +18,15 @@ namespace MachineTool
         {
             InitializeComponent();
         }
-     
 
 
+        public int _Rounde =8;
+        [Description("圆弧角度"), Category("MT"), Browsable(true)]
+        public int MRounde
+        {
+            get { return _Rounde; }
+            set { _Rounde = value; }
+        }
         public string _Text = "正AbCd456";
         [Description("文字"), Category("MT"), Browsable(true)]
         public  string MText
@@ -95,7 +101,13 @@ namespace MachineTool
             }
         }
 
-
+        private PointF[] _pathGradient = new PointF[2] { new PointF(0.5f, 0.5f), new PointF(0.85f, 0.1f) };
+        [DisplayName("渐变色参数"), Category("MT"), Description("渐变色参数\r\n[0]:渐变色中心点\r\n[1]:过度色焦点"), Browsable(true)]
+        public PointF[] PathGradientParam
+        {
+            get { return _pathGradient; }
+            set { _pathGradient = value; this.Invalidate(); }
+        }
 
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -118,20 +130,20 @@ namespace MachineTool
             float w = this.Width - 1;
             float h=this.Height - 1;
             Rectangle borderRec = new Rectangle(0,0, this.Width - 1, this.Height - 1);
-            GraphicsPath gp = CreateRoundedRectanglePath(borderRec, 8);
+            GraphicsPath gp = CreateRoundedRectanglePath(borderRec, MRounde);
             this.Region = new Region(gp);
-
+           
 
             borderRec.Inflate(-1, -1);
             gp.ClearMarkers();
-            gp = CreateRoundedRectanglePath(borderRec, 8);
+            gp = CreateRoundedRectanglePath(borderRec, MRounde);
             MGrap.DrawPath(BorderPen, gp);
             MGrap.FillPath(BackColorBrush, gp);
 
             PathGradientBrush pgb = new PathGradientBrush(gp);
             pgb.CenterColor = BackColor;
-            pgb.CenterPoint = new PointF(borderRec.Left + borderRec.Width / 2, borderRec.Top + borderRec.Height / 2);
-            pgb.FocusScales = new PointF(0.85f, 0.1f);
+            pgb.CenterPoint = new PointF( borderRec.Width* PathGradientParam[0].X,  borderRec.Height* PathGradientParam[0].Y);
+            pgb.FocusScales = PathGradientParam[1];
             pgb.SurroundColors = new Color[] {Color.FromArgb(100, GetStatusColor()) };
             MGrap.FillPath(pgb, gp);
 
