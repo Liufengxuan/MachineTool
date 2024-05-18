@@ -19,7 +19,13 @@ namespace MachineTool
             InitializeComponent();
         }
 
-
+        public int _mainColorAlpha = 100;
+        [Description("主色调Alpha"), Category("MT"), Browsable(true)]
+        public int MainColorAlpha
+        {
+            get { return _mainColorAlpha; }
+            set { _mainColorAlpha = value; }
+        }
         public int _Rounde =8;
         [Description("圆弧角度"), Category("MT"), Browsable(true)]
         public int MRounde
@@ -144,7 +150,7 @@ namespace MachineTool
             pgb.CenterColor = BackColor;
             pgb.CenterPoint = new PointF( borderRec.Width* PathGradientParam[0].X,  borderRec.Height* PathGradientParam[0].Y);
             pgb.FocusScales = PathGradientParam[1];
-            pgb.SurroundColors = new Color[] {Color.FromArgb(100, GetStatusColor()) };
+            pgb.SurroundColors = new Color[] {Color.FromArgb(MainColorAlpha, GetStatusColor()) };
             MGrap.FillPath(pgb, gp);
 
             int h1=Convert.ToInt32( borderRec.Height * 0.1f);

@@ -119,7 +119,9 @@ namespace MachineTool
 
 
             SizeF backSize = new SizeF(sizeF.Width + neiSuo, sizeF.Height + neiSuo);
+            MGrap.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             MGrap.FillRectangle(new SolidBrush(this.BackColor), new RectangleF(new PointF(this.Width / 2 - backSize.Width / 2, 0), backSize));
+           
             MGrap.DrawString(TitleText, TitleFont, new SolidBrush(FontColor), new PointF(this.Width / 2 - sizeF.Width / 2, 0));
 
 

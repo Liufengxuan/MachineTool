@@ -359,7 +359,7 @@
             // 
             this.statusButton1.ActColor = System.Drawing.Color.Lime;
             this.statusButton1.AntiAliasing = true;
-            this.statusButton1.BackColor = System.Drawing.Color.Transparent;
+            this.statusButton1.BackColor = System.Drawing.Color.Aqua;
             this.statusButton1.borderColor = System.Drawing.Color.IndianRed;
             this.statusButton1.EnterColor = System.Drawing.Color.Peru;
             this.statusButton1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
