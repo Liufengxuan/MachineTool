@@ -115,8 +115,8 @@ namespace MachineTool
 
             Color color = MWork ? MColor2 : MColor1;
             //床身距离控件边缘的距离
-            float csX = this.Width * 0.03f;
-            float csY = this.Height * 0.08f;
+            float csX = this.Width * 0.02f;
+            float csY = this.Height * 0.04f;
             RectangleF bodyRect = new RectangleF(csX, csY, this.Width - csX * 2, this.Height - csY * 2);
             MGrap.DrawRectangles(new Pen(MColor1, 2), new RectangleF[] { bodyRect });
             Brush b = new HatchBrush(HatchStyle.Cross, this.BackColor, color);
@@ -137,8 +137,8 @@ namespace MachineTool
 
             if (BanMode == 2 || BanMode == 1)
             {
-                csX = this.Width * 0.08f;
-                csY = this.Height * 0.15f;
+                csX = this.Width * 0.06f;
+                csY = this.Height * 0.08f;
                 color = BanMode == 2 ? Color.FromArgb(210, BanColor2) : Color.FromArgb(210, BanColor1); // 半透明红色
                 Brush brush = new SolidBrush(color);
                 RectangleF rr = new RectangleF(csX, csY, this.Width - csX * 2, this.Height - csY * 2);

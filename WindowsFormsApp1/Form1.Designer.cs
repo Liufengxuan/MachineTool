@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             MachineTool.ButtonInfo buttonInfo1 = new MachineTool.ButtonInfo();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             MachineTool.ButtonInfo buttonInfo2 = new MachineTool.ButtonInfo();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             MachineTool.ButtonInfo buttonInfo3 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo4 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo5 = new MachineTool.ButtonInfo();
@@ -44,6 +44,7 @@
             MachineTool.ButtonInfo buttonInfo13 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo14 = new MachineTool.ButtonInfo();
             MachineTool.ButtonInfo buttonInfo15 = new MachineTool.ButtonInfo();
+            this.machine1 = new MachineTool.Machine();
             this.statusButton2 = new MachineTool.StatusButton();
             this.navBar2 = new MachineTool.NavBar();
             this.mGroupBox2 = new MachineTool.MGroupBox();
@@ -52,7 +53,6 @@
             this.roller1 = new MachineTool.Roller();
             this.machine2 = new MachineTool.Machine();
             this.mGroupBox1 = new MachineTool.MGroupBox();
-            this.machine1 = new MachineTool.Machine();
             this.bulb1 = new MachineTool.Bulb();
             this.pressWheel2 = new MachineTool.PressWheel();
             this.horDrill2 = new MachineTool.HorDrill();
@@ -63,8 +63,37 @@
             this.axisDisplay1 = new MachineTool.AxisDisplay();
             this.verDrill1 = new MachineTool.VerDrill();
             this.mGroupBox2.SuspendLayout();
-            this.mGroupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // machine1
+            // 
+            this.machine1.ActColor = System.Drawing.Color.Lime;
+            this.machine1.AntiAliasing = true;
+            this.machine1.BanColor1 = System.Drawing.Color.BurlyWood;
+            this.machine1.BanColor2 = System.Drawing.Color.DarkGray;
+            this.machine1.BanContent = "abc123汉.nc";
+            this.machine1.BanMode = 1;
+            this.machine1.EnterColor = System.Drawing.Color.Peru;
+            buttonInfo1.Command1 = null;
+            buttonInfo1.Command2 = null;
+            buttonInfo1.Command3 = null;
+            buttonInfo1.Command4 = null;
+            buttonInfo1.Command5 = null;
+            buttonInfo1.Command6 = null;
+            buttonInfo1.ID = "machine1";
+            this.machine1.Info = buttonInfo1;
+            this.machine1.IsActivate = false;
+            this.machine1.JtLoc = 0.5F;
+            this.machine1.Location = new System.Drawing.Point(40, 211);
+            this.machine1.MainColor = System.Drawing.Color.Black;
+            this.machine1.MColor1 = System.Drawing.SystemColors.ActiveCaptionText;
+            this.machine1.MColor2 = System.Drawing.Color.LimeGreen;
+            this.machine1.MWork = false;
+            this.machine1.Name = "machine1";
+            this.machine1.PressColor = System.Drawing.Color.Gold;
+            this.machine1.Size = new System.Drawing.Size(285, 180);
+            this.machine1.TabIndex = 11;
+            this.machine1.UseThemeColor = false;
             // 
             // statusButton2
             // 
@@ -74,14 +103,14 @@
             this.statusButton2.borderColor = System.Drawing.Color.DarkGray;
             this.statusButton2.EnterColor = System.Drawing.Color.Peru;
             this.statusButton2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            buttonInfo1.Command1 = null;
-            buttonInfo1.Command2 = null;
-            buttonInfo1.Command3 = null;
-            buttonInfo1.Command4 = null;
-            buttonInfo1.Command5 = null;
-            buttonInfo1.Command6 = null;
-            buttonInfo1.ID = "StatusButton";
-            this.statusButton2.Info = buttonInfo1;
+            buttonInfo2.Command1 = null;
+            buttonInfo2.Command2 = null;
+            buttonInfo2.Command3 = null;
+            buttonInfo2.Command4 = null;
+            buttonInfo2.Command5 = null;
+            buttonInfo2.Command6 = null;
+            buttonInfo2.ID = "StatusButton";
+            this.statusButton2.Info = buttonInfo2;
             this.statusButton2.IsActivate = false;
             this.statusButton2.Location = new System.Drawing.Point(403, 247);
             this.statusButton2.MainColor = System.Drawing.Color.Black;
@@ -152,14 +181,14 @@
             this.belt1.BeltColor2 = System.Drawing.Color.LimeGreen;
             this.belt1.BeltWork = false;
             this.belt1.EnterColor = System.Drawing.Color.Peru;
-            buttonInfo2.Command1 = null;
-            buttonInfo2.Command2 = null;
-            buttonInfo2.Command3 = null;
-            buttonInfo2.Command4 = null;
-            buttonInfo2.Command5 = null;
-            buttonInfo2.Command6 = null;
-            buttonInfo2.ID = "belt1";
-            this.belt1.Info = buttonInfo2;
+            buttonInfo3.Command1 = null;
+            buttonInfo3.Command2 = null;
+            buttonInfo3.Command3 = null;
+            buttonInfo3.Command4 = null;
+            buttonInfo3.Command5 = null;
+            buttonInfo3.Command6 = null;
+            buttonInfo3.ID = "belt1";
+            this.belt1.Info = buttonInfo3;
             this.belt1.IsActivate = false;
             this.belt1.Location = new System.Drawing.Point(26, 85);
             this.belt1.MainColor = System.Drawing.Color.Black;
@@ -181,14 +210,14 @@
             this.roller2.GTColor1 = System.Drawing.Color.RosyBrown;
             this.roller2.GTColor2 = System.Drawing.Color.LimeGreen;
             this.roller2.GTWork = false;
-            buttonInfo3.Command1 = null;
-            buttonInfo3.Command2 = null;
-            buttonInfo3.Command3 = null;
-            buttonInfo3.Command4 = null;
-            buttonInfo3.Command5 = null;
-            buttonInfo3.Command6 = null;
-            buttonInfo3.ID = "roller2";
-            this.roller2.Info = buttonInfo3;
+            buttonInfo4.Command1 = null;
+            buttonInfo4.Command2 = null;
+            buttonInfo4.Command3 = null;
+            buttonInfo4.Command4 = null;
+            buttonInfo4.Command5 = null;
+            buttonInfo4.Command6 = null;
+            buttonInfo4.ID = "roller2";
+            this.roller2.Info = buttonInfo4;
             this.roller2.IsActivate = false;
             this.roller2.Location = new System.Drawing.Point(576, 605);
             this.roller2.MainColor = System.Drawing.Color.Black;
@@ -214,14 +243,14 @@
             this.roller1.GTColor1 = System.Drawing.Color.Black;
             this.roller1.GTColor2 = System.Drawing.Color.LimeGreen;
             this.roller1.GTWork = false;
-            buttonInfo4.Command1 = null;
-            buttonInfo4.Command2 = null;
-            buttonInfo4.Command3 = null;
-            buttonInfo4.Command4 = null;
-            buttonInfo4.Command5 = null;
-            buttonInfo4.Command6 = null;
-            buttonInfo4.ID = "roller1";
-            this.roller1.Info = buttonInfo4;
+            buttonInfo5.Command1 = null;
+            buttonInfo5.Command2 = null;
+            buttonInfo5.Command3 = null;
+            buttonInfo5.Command4 = null;
+            buttonInfo5.Command5 = null;
+            buttonInfo5.Command6 = null;
+            buttonInfo5.ID = "roller1";
+            this.roller1.Info = buttonInfo5;
             this.roller1.IsActivate = false;
             this.roller1.Location = new System.Drawing.Point(576, 404);
             this.roller1.MainColor = System.Drawing.Color.Black;
@@ -242,20 +271,20 @@
             this.machine2.BanColor1 = System.Drawing.Color.BurlyWood;
             this.machine2.BanColor2 = System.Drawing.Color.DarkGray;
             this.machine2.BanContent = "abc123汉.nc";
-            this.machine2.BanMode = 2;
+            this.machine2.BanMode = 1;
             this.machine2.EnterColor = System.Drawing.Color.Peru;
             this.machine2.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            buttonInfo5.Command1 = null;
-            buttonInfo5.Command2 = null;
-            buttonInfo5.Command3 = null;
-            buttonInfo5.Command4 = null;
-            buttonInfo5.Command5 = null;
-            buttonInfo5.Command6 = null;
-            buttonInfo5.ID = "machine2";
-            this.machine2.Info = buttonInfo5;
+            buttonInfo6.Command1 = null;
+            buttonInfo6.Command2 = null;
+            buttonInfo6.Command3 = null;
+            buttonInfo6.Command4 = null;
+            buttonInfo6.Command5 = null;
+            buttonInfo6.Command6 = null;
+            buttonInfo6.ID = "machine2";
+            this.machine2.Info = buttonInfo6;
             this.machine2.IsActivate = false;
             this.machine2.JtLoc = 0.5F;
-            this.machine2.Location = new System.Drawing.Point(681, 311);
+            this.machine2.Location = new System.Drawing.Point(567, 228);
             this.machine2.MainColor = System.Drawing.Color.Black;
             this.machine2.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.machine2.MColor1 = System.Drawing.Color.Black;
@@ -263,7 +292,7 @@
             this.machine2.MWork = true;
             this.machine2.Name = "machine2";
             this.machine2.PressColor = System.Drawing.Color.Gold;
-            this.machine2.Size = new System.Drawing.Size(150, 80);
+            this.machine2.Size = new System.Drawing.Size(206, 122);
             this.machine2.TabIndex = 12;
             this.machine2.UseThemeColor = true;
             // 
@@ -271,7 +300,6 @@
             // 
             this.mGroupBox1.BoderColor = System.Drawing.Color.Black;
             this.mGroupBox1.BorderWidth = 3;
-            this.mGroupBox1.Controls.Add(this.machine1);
             this.mGroupBox1.FontColor = System.Drawing.Color.Black;
             this.mGroupBox1.Location = new System.Drawing.Point(140, 331);
             this.mGroupBox1.Name = "mGroupBox1";
@@ -281,36 +309,6 @@
             this.mGroupBox1.TitleFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.mGroupBox1.TitleText = "GroupBoxControl";
             this.mGroupBox1.UseThemeColor = true;
-            // 
-            // machine1
-            // 
-            this.machine1.ActColor = System.Drawing.Color.Lime;
-            this.machine1.AntiAliasing = true;
-            this.machine1.BanColor1 = System.Drawing.Color.BurlyWood;
-            this.machine1.BanColor2 = System.Drawing.Color.DarkGray;
-            this.machine1.BanContent = "abc123汉.nc";
-            this.machine1.BanMode = 0;
-            this.machine1.EnterColor = System.Drawing.Color.Peru;
-            buttonInfo6.Command1 = null;
-            buttonInfo6.Command2 = null;
-            buttonInfo6.Command3 = null;
-            buttonInfo6.Command4 = null;
-            buttonInfo6.Command5 = null;
-            buttonInfo6.Command6 = null;
-            buttonInfo6.ID = "machine1";
-            this.machine1.Info = buttonInfo6;
-            this.machine1.IsActivate = false;
-            this.machine1.JtLoc = 0.5F;
-            this.machine1.Location = new System.Drawing.Point(202, 27);
-            this.machine1.MainColor = System.Drawing.Color.Black;
-            this.machine1.MColor1 = System.Drawing.SystemColors.ActiveCaptionText;
-            this.machine1.MColor2 = System.Drawing.Color.LimeGreen;
-            this.machine1.MWork = false;
-            this.machine1.Name = "machine1";
-            this.machine1.PressColor = System.Drawing.Color.Gold;
-            this.machine1.Size = new System.Drawing.Size(155, 94);
-            this.machine1.TabIndex = 11;
-            this.machine1.UseThemeColor = false;
             // 
             // bulb1
             // 
@@ -542,6 +540,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1278, 748);
+            this.Controls.Add(this.machine1);
             this.Controls.Add(this.statusButton2);
             this.Controls.Add(this.navBar2);
             this.Controls.Add(this.mGroupBox2);
@@ -561,7 +560,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.mGroupBox2.ResumeLayout(false);
-            this.mGroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
