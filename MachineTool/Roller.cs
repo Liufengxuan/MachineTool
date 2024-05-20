@@ -103,7 +103,8 @@ namespace MachineTool
         public enum PYLocEnum
         {
             left = 0,
-            right = 1
+            right = 1,
+            full=2
         }
 
 
@@ -211,7 +212,7 @@ namespace MachineTool
                 for (int i = 0; i < rollerCount - 1; i++)
                 {
                     // if (PYLoc == PYLocEnum.left && i < (rollerCount / 2) || PYLoc == PYLocEnum.right && i > (rollerCount / 2))
-                    if (PYLoc == PYLocEnum.left && i < (rollerCount / 2) || PYLoc == PYLocEnum.right && i >= (rollerCount / 2))
+                    if (PYLoc == PYLocEnum.left && i < (rollerCount / 2) || PYLoc == PYLocEnum.right && i >= (rollerCount / 2) || PYLoc == PYLocEnum.full)
                     {
                         RectangleF rr = new RectangleF(curX + rollerWidth + pySpan, rollerVSpan, pyWidth, this.Height - rollerVSpan * 2);
                         //b = new LinearGradientBrush(new PointF(rr.X,rr.Y/2),new PointF(rr.X+rr.Width,rr.Y/2),StateColor1,Color.DarkGray);
