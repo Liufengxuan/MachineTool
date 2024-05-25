@@ -230,6 +230,7 @@
             this.roller2.Size = new System.Drawing.Size(255, 113);
             this.roller2.TabIndex = 13;
             this.roller2.UseThemeColor = false;
+            this.roller2.Vertical = false;
             // 
             // roller1
             // 
@@ -237,8 +238,8 @@
             this.roller1.AntiAliasing = true;
             this.roller1.BanColor1 = System.Drawing.Color.BurlyWood;
             this.roller1.BanColor2 = System.Drawing.Color.DarkGray;
-            this.roller1.BanContent = "abc123汉.nc";
-            this.roller1.BanMode = 0;
+            this.roller1.BanContent = "aABCDEFGHIJKLMNOPQRST";
+            this.roller1.BanMode = 1;
             this.roller1.EnterColor = System.Drawing.Color.Peru;
             this.roller1.GTColor1 = System.Drawing.Color.Black;
             this.roller1.GTColor2 = System.Drawing.Color.LimeGreen;
@@ -252,7 +253,7 @@
             buttonInfo5.ID = "roller1";
             this.roller1.Info = buttonInfo5;
             this.roller1.IsActivate = false;
-            this.roller1.Location = new System.Drawing.Point(576, 404);
+            this.roller1.Location = new System.Drawing.Point(541, 404);
             this.roller1.MainColor = System.Drawing.Color.Black;
             this.roller1.Name = "roller1";
             this.roller1.PressColor = System.Drawing.Color.Gold;
@@ -260,9 +261,10 @@
             this.roller1.PYColor2 = System.Drawing.Color.LimeGreen;
             this.roller1.PYLoc = MachineTool.Roller.PYLocEnum.full;
             this.roller1.PYMode = 1;
-            this.roller1.Size = new System.Drawing.Size(226, 99);
+            this.roller1.Size = new System.Drawing.Size(350, 126);
             this.roller1.TabIndex = 0;
             this.roller1.UseThemeColor = true;
+            this.roller1.Vertical = false;
             // 
             // machine2
             // 
