@@ -316,6 +316,7 @@
             // 
             this.bulb1.ActColor = System.Drawing.Color.Lime;
             this.bulb1.AntiAliasing = true;
+            this.bulb1.AutoWidth = true;
             this.bulb1.BlubDire = MachineTool.Bulb.DireEnum.left;
             this.bulb1.Content = "abc123汉";
             this.bulb1.CurrentState = true;
@@ -333,7 +334,7 @@
             this.bulb1.MainColor = System.Drawing.Color.Black;
             this.bulb1.Name = "bulb1";
             this.bulb1.PressColor = System.Drawing.Color.Gold;
-            this.bulb1.Size = new System.Drawing.Size(116, 23);
+            this.bulb1.Size = new System.Drawing.Size(78, 23);
             this.bulb1.StateColor1 = System.Drawing.Color.Lime;
             this.bulb1.StateColor2 = System.Drawing.Color.Red;
             this.bulb1.TabIndex = 8;

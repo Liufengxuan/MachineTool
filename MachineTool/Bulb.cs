@@ -50,7 +50,16 @@ namespace MachineTool
         public string Content
         {
             get { return _content; }
-            set { _content = value; this.Invalidate(); }
+            set 
+            {
+                _content = value; 
+                this.Invalidate();
+                if (AutoWidth)
+                {
+                    AutoChangeWidth();
+                }
+            
+            }
         }
 
 
@@ -71,14 +80,29 @@ namespace MachineTool
             set { _blubDire = value; this.Invalidate(); }
         }
 
+  
+
+        private bool _autoWidth = false;
+        [Description("自动调整长度"), Category("bulb"), Browsable(true)]
+        public bool AutoWidth
+        {
+            get { return _autoWidth; }
+            set { _autoWidth = value; AutoChangeWidth(); this.Invalidate(); }
+        }
+
         public enum DireEnum
         {
             left = 0, right = 1
         }
 
 
+        private void AutoChangeWidth()
+        {
+            SizeF stringSize = MGrap.MeasureString(Content, this.Font);
+            SizeF elliSizeF = new SizeF(this.Height - 3, this.Height - 3);
 
-
+            this.Width = Convert.ToInt32(stringSize.Width + elliSizeF.Width) + 5;
+        }
 
 
         protected override void OnPaint(PaintEventArgs e)
