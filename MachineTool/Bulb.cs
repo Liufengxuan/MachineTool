@@ -26,14 +26,28 @@ namespace MachineTool
         public Color StateColor1
         {
             get { return _stateColor1; }
-            set { _stateColor1 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _stateColor1)
+                {
+                    _stateColor1 = value;
+                    this.Invalidate();
+                }
+            }
         }
         private Color _stateColor2 = Color.Red;
         [Description("状态二颜色"), Category("bulb"), Browsable(true)]
         public Color StateColor2
         {
             get { return _stateColor2; }
-            set { _stateColor2 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _stateColor2)
+                {
+                    _stateColor2 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
@@ -42,7 +56,14 @@ namespace MachineTool
         public bool CurrentState
         {
             get { return _currentState; }
-            set { _currentState = value; this.Invalidate(); }
+            set 
+            {
+                if (value != _currentState)
+                {
+                    _currentState = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private string _content = "abc123汉";
@@ -50,15 +71,13 @@ namespace MachineTool
         public string Content
         {
             get { return _content; }
-            set 
+            set
             {
-                _content = value; 
-                this.Invalidate();
-                if (AutoWidth)
+                if (value != _content)
                 {
-                    AutoChangeWidth();
+                    _content = value;
+                    this.Invalidate();
                 }
-            
             }
         }
 
@@ -68,7 +87,14 @@ namespace MachineTool
         public DireEnum TextDire
         {
             get { return _textDire; }
-            set { _textDire = value; this.Invalidate(); }
+            set
+            {
+                if (value != _textDire)
+                {
+                    _textDire = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
@@ -87,7 +113,14 @@ namespace MachineTool
         public bool AutoWidth
         {
             get { return _autoWidth; }
-            set { _autoWidth = value; AutoChangeWidth(); this.Invalidate(); }
+            set
+            {
+                if (value != _autoWidth)
+                {
+                    _autoWidth = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         public enum DireEnum
@@ -96,13 +129,6 @@ namespace MachineTool
         }
 
 
-        private void AutoChangeWidth()
-        {
-            SizeF stringSize = MGrap.MeasureString(Content, this.Font);
-            SizeF elliSizeF = new SizeF(this.Height - 3, this.Height - 3);
-
-            this.Width = Convert.ToInt32(stringSize.Width + elliSizeF.Width) + 5;
-        }
 
 
         protected override void OnPaint(PaintEventArgs e)
@@ -172,7 +198,14 @@ namespace MachineTool
 
             }
 
-
+            if (AutoWidth)
+            {
+               int width = Convert.ToInt32(stringSize.Width + elliSizeF.Width) + 5;
+                if (width != this.Width)
+                {
+                    this.Width = width;
+                }
+            }
             e.Graphics.DrawImage(MImage, 0, 0);
             base.OnPaint(e);
         }

@@ -30,7 +30,14 @@ namespace MachineTool
         public string TitleText
         {
             get { return _titleText; }
-            set { _titleText = value; this.Invalidate(); }
+            set
+            {
+                if (value != _titleText)
+                {
+                    _titleText = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _boderColor = Color.Black;
@@ -44,7 +51,14 @@ namespace MachineTool
                     return BaseControl._ThemeColor;
                 }
                 return _boderColor; }
-            set { _boderColor = value; this.Invalidate(); }
+            set
+            {
+                if (value != _boderColor)
+                {
+                    _boderColor = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private bool _UseThemeColor = true;
@@ -55,7 +69,14 @@ namespace MachineTool
             {
                 return _UseThemeColor;
             }
-            set { _UseThemeColor = value; Invalidate(); }
+            set
+            {
+                if (value != _UseThemeColor)
+                {
+                    _UseThemeColor = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
@@ -64,7 +85,14 @@ namespace MachineTool
         public Color FontColor
         {
             get { return _fontColor; }
-            set { _fontColor = value; this.Invalidate(); }
+            set
+            {
+                if (value != _fontColor)
+                {
+                    _fontColor = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private int _borderWidth = 1;
@@ -72,7 +100,14 @@ namespace MachineTool
         public int BorderWidth
         {
             get { return _borderWidth; }
-            set { _borderWidth = value; this.Invalidate(); }
+            set
+            {
+                if (value != _borderWidth)
+                {
+                    _borderWidth = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Font _titleFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -80,7 +115,14 @@ namespace MachineTool
         public Font TitleFont
         {
             get { return _titleFont; }
-            set { _titleFont = value; this.Invalidate(); }
+            set
+            {
+                if (value != _titleFont)
+                {
+                    _titleFont = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 

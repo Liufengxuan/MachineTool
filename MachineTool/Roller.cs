@@ -36,14 +36,28 @@ namespace MachineTool
                     return ThemeColor;
                 }
                 return _gtColor1; }
-            set { _gtColor1 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _gtColor1)
+                {
+                    _gtColor1 = value;
+                    this.Invalidate();
+                }
+            }
         }
         private Color _gtColor2 = Color.LimeGreen;
         [Description("滚筒工作颜色"), Category("roller"), Browsable(true)]
         public Color GTColor2
         {
             get { return _gtColor2; }
-            set { _gtColor2 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _gtColor2)
+                {
+                    _gtColor2 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
@@ -52,7 +66,14 @@ namespace MachineTool
         public bool GTWork
         {
             get { return _gtWork; }
-            set { _gtWork = value; this.Invalidate(); }
+            set
+            {
+                if (value != _gtWork)
+                {
+                    _gtWork = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private string _banContent = "abc123汉.nc";
@@ -60,7 +81,14 @@ namespace MachineTool
         public string BanContent
         {
             get { return _banContent; }
-            set { _banContent = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banContent)
+                {
+                    _banContent = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private int _pyMode = 0;
@@ -68,7 +96,14 @@ namespace MachineTool
         public int PYMode
         {
             get { return _pyMode; }
-            set { _pyMode = value; this.Invalidate(); }
+            set
+            {
+                if (value != _pyMode)
+                {
+                    _pyMode = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _pyColor1 = Color.Black;
@@ -82,7 +117,14 @@ namespace MachineTool
                     return ThemeColor;
                 }
                 return _pyColor1; }
-            set { _pyColor1 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _pyColor1)
+                {
+                    _pyColor1 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _pyColor2 = Color.LimeGreen;
@@ -90,7 +132,14 @@ namespace MachineTool
         public Color PYColor2
         {
             get { return _pyColor2; }
-            set { _pyColor2 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _pyColor2)
+                {
+                    _pyColor2 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private PYLocEnum _pyLoc = PYLocEnum.left;
@@ -98,7 +147,14 @@ namespace MachineTool
         public PYLocEnum PYLoc
         {
             get { return _pyLoc; }
-            set { _pyLoc = value; this.Invalidate(); }
+            set
+            {
+                if (value != _pyLoc)
+                {
+                    _pyLoc = value;
+                    this.Invalidate();
+                }
+            }
         }
         public enum PYLocEnum
         {
@@ -112,7 +168,14 @@ namespace MachineTool
         public bool Vertical
         {
             get { return _vertical; }
-            set { _vertical = value; this.Invalidate(); }
+            set
+            {
+                if (value != _vertical)
+                {
+                    _vertical = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
@@ -122,7 +185,14 @@ namespace MachineTool
         public int BanMode
         {
             get { return _banMode; }
-            set { _banMode = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banMode)
+                {
+                    _banMode = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _banColor1 = Color.BurlyWood;
@@ -130,7 +200,14 @@ namespace MachineTool
         public Color BanColor1
         {
             get { return _banColor1; }
-            set { _banColor1 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banColor1)
+                {
+                    _banColor1 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _banColor2 = Color.DarkGray;
@@ -138,7 +215,14 @@ namespace MachineTool
         public Color BanColor2
         {
             get { return _banColor2; }
-            set { _banColor2 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banColor2)
+                {
+                    _banColor2 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 

@@ -24,21 +24,42 @@ namespace MachineTool
         public int MainColorAlpha
         {
             get { return _mainColorAlpha; }
-            set { _mainColorAlpha = value; }
+            set
+            {
+                if (value != _mainColorAlpha)
+                {
+                    _mainColorAlpha = value;
+                    this.Invalidate();
+                }
+            }
         }
         public int _Rounde =8;
         [Description("圆弧角度"), Category("MT"), Browsable(true)]
         public int MRounde
         {
             get { return _Rounde; }
-            set { _Rounde = value; }
+            set
+            {
+                if (value != _Rounde)
+                {
+                    _Rounde = value;
+                    this.Invalidate();
+                }
+            }
         }
         public string _Text = "正AbCd456";
         [Description("文字"), Category("MT"), Browsable(true)]
         public  string MText
         {
             get { return _Text; }
-            set { _Text = value; }
+            set
+            {
+                if (value != _Text)
+                {
+                    _Text = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         public Color _borderColor = Color.DarkGray;
@@ -46,7 +67,14 @@ namespace MachineTool
         public Color borderColor
         {
             get { return _borderColor; }
-            set { _borderColor = value; }
+            set
+            {
+                if (value != _borderColor)
+                {
+                    _borderColor = value;
+                    this.Invalidate();
+                }
+            }
         }
 
    
@@ -112,7 +140,14 @@ namespace MachineTool
         public PointF[] PathGradientParam
         {
             get { return _pathGradient; }
-            set { _pathGradient = value; this.Invalidate(); }
+            set
+            {
+                if (value != _pathGradient)
+                {
+                    _pathGradient = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         protected override void OnPaint(PaintEventArgs e)

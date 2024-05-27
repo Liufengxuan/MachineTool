@@ -24,7 +24,14 @@ namespace MachineTool
         public int BanMode
         {
             get { return _banMode; }
-            set { _banMode = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banMode)
+                {
+                    _banMode = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _banColor1 = Color.BurlyWood;
@@ -32,7 +39,14 @@ namespace MachineTool
         public Color BanColor1
         {
             get { return _banColor1; }
-            set { _banColor1 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banColor1)
+                {
+                    _banColor1 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _banColor2 = Color.DarkGray;
@@ -40,7 +54,14 @@ namespace MachineTool
         public Color BanColor2
         {
             get { return _banColor2; }
-            set { _banColor2 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banColor2)
+                {
+                    _banColor2 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
@@ -50,7 +71,14 @@ namespace MachineTool
         public bool MWork
         {
             get { return _mWork; }
-            set { _mWork = value; this.Invalidate(); }
+            set
+            {
+                if (value != _mWork)
+                {
+                    _mWork = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _mColor1 = Color.Gray;
@@ -64,7 +92,14 @@ namespace MachineTool
                     return ThemeColor;
                 }
                 return _mColor1; }
-            set { _mColor1 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _mColor1)
+                {
+                    _mColor1 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private Color _mColor2 = Color.LimeGreen;
@@ -72,7 +107,14 @@ namespace MachineTool
         public Color MColor2
         {
             get { return _mColor2; }
-            set { _mColor2 = value; this.Invalidate(); }
+            set
+            {
+                if (value != _mColor2)
+                {
+                    _mColor2 = value;
+                    this.Invalidate();
+                }
+            }
         }
 
         private string _banContent = "abc123汉.nc";
@@ -80,7 +122,14 @@ namespace MachineTool
         public string BanContent
         {
             get { return _banContent; }
-            set { _banContent = value; this.Invalidate(); }
+            set
+            {
+                if (value != _banContent)
+                {
+                    _banContent = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
@@ -89,7 +138,14 @@ namespace MachineTool
         public float JtLoc
         {
             get { return _jtLoc; }
-            set { _jtLoc = value; this.Invalidate(); }
+            set
+            {
+                if (value != _jtLoc)
+                {
+                    _jtLoc = value;
+                    this.Invalidate();
+                }
+            }
         }
 
 
