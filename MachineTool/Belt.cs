@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MachineTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -132,7 +133,20 @@ namespace MachineTool
                 }
             }
         }
-
+        private bool _banStyle = false;
+        [Description("木板显示实木图片"), Category("belt"), Browsable(true)]
+        public bool BanStyle
+        {
+            get { return _banStyle; }
+            set
+            {
+                if (value != _banStyle)
+                {
+                    _banStyle = value;
+                    this.Invalidate();
+                }
+            }
+        }
 
 
 
@@ -180,7 +194,11 @@ namespace MachineTool
                 Brush brush = new SolidBrush(color);
                 RectangleF rr = new RectangleF(beamWidth_Ban, beamWidth_Ban, this.Width - beamWidth_Ban * 2, this.Height - beamWidth_Ban * 2);
                 // MGrap.DrawRectangles(new Pen(color), new RectangleF[] { rr });
-                MGrap.FillRectangle(brush, rr);
+                if(BanStyle)
+                    MGrap.DrawImage(ZiYuan.muWen1, rr);
+                else
+                    MGrap.FillRectangle(brush, rr);
+
                 SizeF sizeF = MGrap.MeasureString(BanContent, this.Font);
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MachineTool.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -177,6 +178,20 @@ namespace MachineTool
                 }
             }
         }
+        private bool _banStyle = false;
+        [Description("木板显示实木图片"), Category("roller"), Browsable(true)]
+        public bool BanStyle
+        {
+            get { return _banStyle; }
+            set
+            {
+                if (value != _banStyle)
+                {
+                    _banStyle = value;
+                    this.Invalidate();
+                }
+            }
+        }
 
 
 
@@ -275,7 +290,7 @@ namespace MachineTool
                 //滚筒个数
                 int rollerCount = Convert.ToInt32(this.Height / (rollerWidth + rollerHSpan));
                 //滚筒两头相对于边缘的距离
-                float rollerVSpan = this.Width * 0.1f;
+                float rollerVSpan = this.Width * 0.07f;
 
                 float curX = rollerWidth;
                 for (int i = 0; i < rollerCount; i++)
@@ -325,10 +340,15 @@ namespace MachineTool
                 //板子
                 if (BanMode == 2 || BanMode == 1)
                 {
+                    rollerVSpan = this.Width * 0.1f;
                     color = BanMode == 2 ? Color.FromArgb(210, BanColor2) : Color.FromArgb(210, BanColor1); // 半透明红色
                     Brush brush = new SolidBrush(color);
                     RectangleF rr = new RectangleF(rollerVSpan, rollerWidth, this.Width - rollerVSpan * 2, this.Height - rollerWidth * 2);
-                    MGrap.FillRectangle(brush, rr);
+                    if (BanStyle)
+                        MGrap.DrawImage(ZiYuan.muWen1, rr);
+                    else
+                        MGrap.FillRectangle(brush, rr);
+
                     SizeF sizeF = MGrap.MeasureString(BanContent, this.Font);
 
                     // rr = new RectangleF(rollerWidth, rollerVSpan + rr.Height * 0.2f, this.Width - rollerWidth * 2, this.Height - rollerVSpan * 2);
@@ -367,7 +387,7 @@ namespace MachineTool
                 //滚筒个数
                 int rollerCount = Convert.ToInt32(this.Width / (rollerWidth + rollerHSpan));
                 //滚筒两头相对于边缘的距离
-                float rollerVSpan = this.Height * 0.1f;
+                float rollerVSpan = this.Height * 0.07f;
 
                 float curX = rollerWidth;
                 for (int i = 0; i < rollerCount; i++)
@@ -416,11 +436,16 @@ namespace MachineTool
                 //板子
                 if (BanMode == 2 || BanMode == 1)
                 {
+                    rollerVSpan = this.Height * 0.1f;
                     color = BanMode == 2 ? Color.FromArgb(210, BanColor2) : Color.FromArgb(210, BanColor1); // 半透明红色
                     Brush brush = new SolidBrush(color);
                     RectangleF rr = new RectangleF(rollerWidth, rollerVSpan, this.Width - rollerWidth * 2, this.Height - rollerVSpan * 2);
                     // MGrap.DrawRectangles(new Pen(color), new RectangleF[] { rr });
-                    MGrap.FillRectangle(brush, rr);
+                    //MGrap.FillRectangle(brush, rr);
+                    if (BanStyle)
+                        MGrap.DrawImage(ZiYuan.muWen1, rr);
+                    else
+                        MGrap.FillRectangle(brush, rr);
                     SizeF sizeF = MGrap.MeasureString(BanContent, this.Font);
 
 
